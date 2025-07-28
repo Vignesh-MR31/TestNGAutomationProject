@@ -4,6 +4,7 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+
 public class TestListeners implements ITestListener{
 
 	@Override
@@ -18,7 +19,7 @@ public class TestListeners implements ITestListener{
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		UtilityMethods.takeScreenshotMethod(result.getName());
+		
 	}
 
 	@Override

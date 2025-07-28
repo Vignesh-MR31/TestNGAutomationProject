@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="web.automation.tests.AddToCartTests">
+      <class name="web.automation.tests.WishListTests">
         <methods>
           <include name="quitDriver"/>
           <include name="initiateDriver"/>
-          <include name="verifyingTheProductToCartFromTheRelatedProductsSectionOfTheProductDisplayPage"/>
+          <include name="verifyNavigatingToMyWishListPageFromTheMyAccountPage"/>
         </methods>
-      </class> <!-- web.automation.tests.AddToCartTests -->
+      </class> <!-- web.automation.tests.WishListTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

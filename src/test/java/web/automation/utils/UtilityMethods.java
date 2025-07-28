@@ -6,12 +6,13 @@ import java.io.IOException;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 
 import web.automation.base.Base;
 
 public class UtilityMethods extends Base{
 
-	public static void takeScreenshotMethod(String testName) {
+	public static File takeScreenshotMethod(String testName,WebDriver driver) {
 		TakesScreenshot screenshot = (TakesScreenshot)driver;
 		File screenshotFile = screenshot.getScreenshotAs(OutputType.FILE);
 		File screenshotFolder = new File(System.getProperty("user.dir")+"\\test-reports\\screenshots\\"+testName+".png");
@@ -20,6 +21,7 @@ public class UtilityMethods extends Base{
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		return screenshotFile;
 		
 	}
 }

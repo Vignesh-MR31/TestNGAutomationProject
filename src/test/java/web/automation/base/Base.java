@@ -6,18 +6,23 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
+
+import com.aventstack.chaintest.plugins.ChainTestListener;
 
 import web.automation.utils.PropertyLoader;
+import web.automation.utils.UtilityMethods;
 
 public class Base {
 	
-	public static WebDriver driver;
+	public WebDriver driver;
 	
-	@BeforeMethod
-	public void initiateDriver(){
-		String browser = PropertyLoader.propertyLoaderMethod().getProperty("browser").toLowerCase();
+	@BeforeMethod @Parameters("browser")
+	public void initiateDriver(String browser){
+		//String browser = PropertyLoader.propertyLoaderMethod().getProperty("browser").toLowerCase();
 		switch(browser){
 		case "chrome":
 			driver = new ChromeDriver();
@@ -31,17 +36,19 @@ public class Base {
 		default:
 			driver = new ChromeDriver();
 		}
-		driver.get(PropertyLoader.propertyLoaderMethod().getProperty("url"));
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		DriverManager.setDriver(driver);
+		DriverManager.getDriver().get(PropertyLoader.propertyLoaderMethod().getProperty("url"));
+		DriverManager.getDriver().manage().window().maximize();
+		DriverManager.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		
 	}
 	
 	@AfterMethod
-	public void quitDriver() {
-		if(driver!=null) {
-			driver.quit();
+	public void quitDriver(ITestResult result) {
+		if(!result.isSuccess()) {
+			ChainTestListener.embed(UtilityMethods.takeScreenshotMethod(result.getName(),DriverManager.getDriver()), "image/png");
 		}
+		DriverManager.quitDriver();
 	}
 
 }

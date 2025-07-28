@@ -1,21 +1,19 @@
 package web.automation.tests;
 
 import org.testng.Assert;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import web.automation.base.Base;
+import web.automation.base.DriverManager;
 import web.automation.pages.LoginPage;
-import web.automation.utils.TestListeners;
 
-@Listeners(TestListeners.class)
-public class LoginPageTests extends Base{
-	
+public class LoginPageTests extends Base {
+
 	private LoginPage loginPage;
-	
-	@Test(priority=1,groups="LoginUser")
+
+	@Test(priority = 1, groups = "LoginPage")
 	public void loginUserWithValidCredentials() {
-		loginPage = new LoginPage(driver);
+		loginPage = new LoginPage(DriverManager.getDriver());
 		loginPage.myAccountElement().click();
 		loginPage.loginOptionElement().click();
 		loginPage.emailAddressElement().sendKeys("Vickymr@gmail.com");

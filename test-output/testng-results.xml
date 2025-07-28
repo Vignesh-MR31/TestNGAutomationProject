@@ -1,85 +1,861 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="26" passed="24" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-17T16:56:24 IST" name="Default suite" finished-at="2025-07-17T16:56:46 IST" duration-ms="21954">
+  <suite started-at="2025-07-28T20:44:37 IST" name="Suite" finished-at="2025-07-28T20:46:21 IST" duration-ms="103870">
     <groups>
+      <group name="WishListPage">
+        <method signature="WishListTests.verifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheRelatedProductsSectionOfProductDisplayPage()[pri:1, instance:web.automation.tests.WishListTests@77102b91]" name="verifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheRelatedProductsSectionOfProductDisplayPage" class="web.automation.tests.WishListTests"/>
+        <method signature="WishListTests.VerifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheFeaturedSectionOfHomePage()[pri:2, instance:web.automation.tests.WishListTests@77102b91]" name="VerifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheFeaturedSectionOfHomePage" class="web.automation.tests.WishListTests"/>
+        <method signature="WishListTests.VerifyAddingTheProductToWishListFromTheProductsDisplayedInTheCategoryOrSubCategoryPage()[pri:3, instance:web.automation.tests.WishListTests@77102b91]" name="VerifyAddingTheProductToWishListFromTheProductsDisplayedInTheCategoryOrSubCategoryPage" class="web.automation.tests.WishListTests"/>
+        <method signature="WishListTests.verifyAddingAProductToWishListPageFromTheSearchResultsPage()[pri:4, instance:web.automation.tests.WishListTests@77102b91]" name="verifyAddingAProductToWishListPageFromTheSearchResultsPage" class="web.automation.tests.WishListTests"/>
+        <method signature="WishListTests.verifyNavigatingToMyWishListPageUsingTheWishListHeaderOption()[pri:5, instance:web.automation.tests.WishListTests@77102b91]" name="verifyNavigatingToMyWishListPageUsingTheWishListHeaderOption" class="web.automation.tests.WishListTests"/>
+        <method signature="WishListTests.verifyNavigatingToMyWishListPageFromTheFooteroptions()[pri:8, instance:web.automation.tests.WishListTests@77102b91]" name="verifyNavigatingToMyWishListPageFromTheFooteroptions" class="web.automation.tests.WishListTests"/>
+        <method signature="WishListTests.verifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheRelatedProductsSectionOfProductDisplayPage()[pri:1, instance:web.automation.tests.WishListTests@177bea38]" name="verifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheRelatedProductsSectionOfProductDisplayPage" class="web.automation.tests.WishListTests"/>
+        <method signature="WishListTests.VerifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheFeaturedSectionOfHomePage()[pri:2, instance:web.automation.tests.WishListTests@177bea38]" name="VerifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheFeaturedSectionOfHomePage" class="web.automation.tests.WishListTests"/>
+        <method signature="WishListTests.VerifyAddingTheProductToWishListFromTheProductsDisplayedInTheCategoryOrSubCategoryPage()[pri:3, instance:web.automation.tests.WishListTests@177bea38]" name="VerifyAddingTheProductToWishListFromTheProductsDisplayedInTheCategoryOrSubCategoryPage" class="web.automation.tests.WishListTests"/>
+        <method signature="WishListTests.verifyAddingAProductToWishListPageFromTheSearchResultsPage()[pri:4, instance:web.automation.tests.WishListTests@177bea38]" name="verifyAddingAProductToWishListPageFromTheSearchResultsPage" class="web.automation.tests.WishListTests"/>
+        <method signature="WishListTests.verifyNavigatingToMyWishListPageUsingTheWishListHeaderOption()[pri:5, instance:web.automation.tests.WishListTests@177bea38]" name="verifyNavigatingToMyWishListPageUsingTheWishListHeaderOption" class="web.automation.tests.WishListTests"/>
+        <method signature="WishListTests.verifyNavigatingToMyWishListPageFromTheFooteroptions()[pri:8, instance:web.automation.tests.WishListTests@177bea38]" name="verifyNavigatingToMyWishListPageFromTheFooteroptions" class="web.automation.tests.WishListTests"/>
+      </group> <!-- WishListPage -->
+      <group name="AddToCartPage">
+        <method signature="AddToCartTests.verifyAddingTheProductToCartFromProductDisplayPage()[pri:1, instance:web.automation.tests.AddToCartTests@2ef14fe]" name="verifyAddingTheProductToCartFromProductDisplayPage" class="web.automation.tests.AddToCartTests"/>
+        <method signature="AddToCartTests.verifyAddingTheProductToCartFromWishListPage()[pri:2, instance:web.automation.tests.AddToCartTests@2ef14fe]" name="verifyAddingTheProductToCartFromWishListPage" class="web.automation.tests.AddToCartTests"/>
+        <method signature="AddToCartTests.verifyAddingTheProductToCartFromSearchResultsPage()[pri:3, instance:web.automation.tests.AddToCartTests@2ef14fe]" name="verifyAddingTheProductToCartFromSearchResultsPage" class="web.automation.tests.AddToCartTests"/>
+        <method signature="AddToCartTests.verifyingTheProductToCartFromTheRelatedProductsSectionOfTheProductDisplayPage()[pri:4, instance:web.automation.tests.AddToCartTests@2ef14fe]" name="verifyingTheProductToCartFromTheRelatedProductsSectionOfTheProductDisplayPage" class="web.automation.tests.AddToCartTests"/>
+        <method signature="AddToCartTests.verifyAddingTheProductToCartFromTheProductsDisplayedInTheCategoryOrSubcategoryPage()[pri:5, instance:web.automation.tests.AddToCartTests@2ef14fe]" name="verifyAddingTheProductToCartFromTheProductsDisplayedInTheCategoryOrSubcategoryPage" class="web.automation.tests.AddToCartTests"/>
+        <method signature="AddToCartTests.verifyAddingTheProductToCartFromProductComparisonPage()[pri:7, instance:web.automation.tests.AddToCartTests@2ef14fe]" name="verifyAddingTheProductToCartFromProductComparisonPage" class="web.automation.tests.AddToCartTests"/>
+        <method signature="AddToCartTests.verifyAddingTheProductToCartFromProductDisplayPage()[pri:1, instance:web.automation.tests.AddToCartTests@ee86bcb]" name="verifyAddingTheProductToCartFromProductDisplayPage" class="web.automation.tests.AddToCartTests"/>
+        <method signature="AddToCartTests.verifyAddingTheProductToCartFromWishListPage()[pri:2, instance:web.automation.tests.AddToCartTests@ee86bcb]" name="verifyAddingTheProductToCartFromWishListPage" class="web.automation.tests.AddToCartTests"/>
+        <method signature="AddToCartTests.verifyAddingTheProductToCartFromSearchResultsPage()[pri:3, instance:web.automation.tests.AddToCartTests@ee86bcb]" name="verifyAddingTheProductToCartFromSearchResultsPage" class="web.automation.tests.AddToCartTests"/>
+        <method signature="AddToCartTests.verifyingTheProductToCartFromTheRelatedProductsSectionOfTheProductDisplayPage()[pri:4, instance:web.automation.tests.AddToCartTests@ee86bcb]" name="verifyingTheProductToCartFromTheRelatedProductsSectionOfTheProductDisplayPage" class="web.automation.tests.AddToCartTests"/>
+        <method signature="AddToCartTests.verifyAddingTheProductToCartFromTheProductsDisplayedInTheCategoryOrSubcategoryPage()[pri:5, instance:web.automation.tests.AddToCartTests@ee86bcb]" name="verifyAddingTheProductToCartFromTheProductsDisplayedInTheCategoryOrSubcategoryPage" class="web.automation.tests.AddToCartTests"/>
+        <method signature="AddToCartTests.verifyAddingTheProductToCartFromProductComparisonPage()[pri:7, instance:web.automation.tests.AddToCartTests@ee86bcb]" name="verifyAddingTheProductToCartFromProductComparisonPage" class="web.automation.tests.AddToCartTests"/>
+      </group> <!-- AddToCartPage -->
+      <group name="LoginPage">
+        <method signature="LoginPageTests.loginUserWithValidCredentials()[pri:1, instance:web.automation.tests.LoginPageTests@265adfad]" name="loginUserWithValidCredentials" class="web.automation.tests.LoginPageTests"/>
+        <method signature="LoginPageTests.loginUserWithValidCredentials()[pri:1, instance:web.automation.tests.LoginPageTests@1921ad94]" name="loginUserWithValidCredentials" class="web.automation.tests.LoginPageTests"/>
+      </group> <!-- LoginPage -->
     </groups>
-    <test started-at="2025-07-17T16:56:24 IST" name="Default test" finished-at="2025-07-17T16:56:46 IST" duration-ms="21954">
-      <class name="web.automation.tests.AddToCartTests">
-        <test-method is-config="true" signature="initiateDriver()[pri:0, instance:web.automation.tests.AddToCartTests@35d019a3]" started-at="2025-07-17T16:56:24 IST" name="initiateDriver" finished-at="2025-07-17T16:56:26 IST" duration-ms="2131" status="PASS">
+    <test started-at="2025-07-28T20:44:37 IST" name="ChromeTest" finished-at="2025-07-28T20:46:13 IST" duration-ms="95970">
+      <class name="web.automation.tests.LoginPageTests">
+        <test-method is-config="true" signature="initiateDriver(java.lang.String)[pri:0, instance:web.automation.tests.LoginPageTests@265adfad]" started-at="2025-07-28T20:44:37 IST" name="initiateDriver" finished-at="2025-07-28T20:44:40 IST" duration-ms="3057" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateDriver -->
-        <test-method signature="verifyAddingTheProductToCartFromProductDisplayPage()[pri:1, instance:web.automation.tests.AddToCartTests@35d019a3]" started-at="2025-07-17T16:56:26 IST" name="verifyAddingTheProductToCartFromProductDisplayPage" finished-at="2025-07-17T16:56:27 IST" duration-ms="1005" status="PASS">
+        <test-method signature="loginUserWithValidCredentials()[pri:1, instance:web.automation.tests.LoginPageTests@265adfad]" started-at="2025-07-28T20:44:40 IST" name="loginUserWithValidCredentials" finished-at="2025-07-28T20:44:42 IST" duration-ms="2019" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUserWithValidCredentials -->
+        <test-method is-config="true" signature="quitDriver(org.testng.ITestResult)[pri:0, instance:web.automation.tests.LoginPageTests@265adfad]" started-at="2025-07-28T20:44:42 IST" name="quitDriver" finished-at="2025-07-28T20:44:42 IST" duration-ms="192" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginUserWithValidCredentials status=SUCCESS method=LoginPageTests.loginUserWithValidCredentials()[pri:1, instance:web.automation.tests.LoginPageTests@265adfad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- web.automation.tests.LoginPageTests -->
+      <class name="web.automation.tests.AddToCartTests">
+        <test-method is-config="true" signature="initiateDriver(java.lang.String)[pri:0, instance:web.automation.tests.AddToCartTests@2ef14fe]" started-at="2025-07-28T20:44:55 IST" name="initiateDriver" finished-at="2025-07-28T20:44:58 IST" duration-ms="2388" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateDriver -->
+        <test-method signature="verifyAddingTheProductToCartFromProductDisplayPage()[pri:1, instance:web.automation.tests.AddToCartTests@2ef14fe]" started-at="2025-07-28T20:44:58 IST" name="verifyAddingTheProductToCartFromProductDisplayPage" finished-at="2025-07-28T20:44:59 IST" duration-ms="1660" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddingTheProductToCartFromProductDisplayPage -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:web.automation.tests.AddToCartTests@35d019a3]" started-at="2025-07-17T16:56:27 IST" name="quitDriver" finished-at="2025-07-17T16:56:28 IST" duration-ms="197" status="PASS">
+        <test-method is-config="true" signature="quitDriver(org.testng.ITestResult)[pri:0, instance:web.automation.tests.AddToCartTests@2ef14fe]" started-at="2025-07-28T20:44:59 IST" name="quitDriver" finished-at="2025-07-28T20:44:59 IST" duration-ms="268" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddingTheProductToCartFromProductDisplayPage status=SUCCESS method=AddToCartTests.verifyAddingTheProductToCartFromProductDisplayPage()[pri:1, instance:web.automation.tests.AddToCartTests@2ef14fe] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method is-config="true" signature="initiateDriver()[pri:0, instance:web.automation.tests.AddToCartTests@35d019a3]" started-at="2025-07-17T16:56:28 IST" name="initiateDriver" finished-at="2025-07-17T16:56:29 IST" duration-ms="1636" status="PASS">
+        <test-method is-config="true" signature="initiateDriver(java.lang.String)[pri:0, instance:web.automation.tests.AddToCartTests@2ef14fe]" started-at="2025-07-28T20:45:09 IST" name="initiateDriver" finished-at="2025-07-28T20:45:11 IST" duration-ms="1896" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateDriver -->
-        <test-method signature="verifyAddingTheProductToCartFromWishListPage()[pri:2, instance:web.automation.tests.AddToCartTests@35d019a3]" started-at="2025-07-17T16:56:29 IST" name="verifyAddingTheProductToCartFromWishListPage" finished-at="2025-07-17T16:56:32 IST" duration-ms="2820" status="PASS">
+        <test-method signature="verifyAddingTheProductToCartFromWishListPage()[pri:2, instance:web.automation.tests.AddToCartTests@2ef14fe]" started-at="2025-07-28T20:45:11 IST" name="verifyAddingTheProductToCartFromWishListPage" finished-at="2025-07-28T20:45:16 IST" duration-ms="4575" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddingTheProductToCartFromWishListPage -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:web.automation.tests.AddToCartTests@35d019a3]" started-at="2025-07-17T16:56:32 IST" name="quitDriver" finished-at="2025-07-17T16:56:32 IST" duration-ms="197" status="PASS">
+        <test-method is-config="true" signature="quitDriver(org.testng.ITestResult)[pri:0, instance:web.automation.tests.AddToCartTests@2ef14fe]" started-at="2025-07-28T20:45:16 IST" name="quitDriver" finished-at="2025-07-28T20:45:17 IST" duration-ms="678" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddingTheProductToCartFromWishListPage status=SUCCESS method=AddToCartTests.verifyAddingTheProductToCartFromWishListPage()[pri:2, instance:web.automation.tests.AddToCartTests@2ef14fe] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method is-config="true" signature="initiateDriver()[pri:0, instance:web.automation.tests.AddToCartTests@35d019a3]" started-at="2025-07-17T16:56:32 IST" name="initiateDriver" finished-at="2025-07-17T16:56:34 IST" duration-ms="1663" status="PASS">
+        <test-method is-config="true" signature="initiateDriver(java.lang.String)[pri:0, instance:web.automation.tests.AddToCartTests@2ef14fe]" started-at="2025-07-28T20:45:28 IST" name="initiateDriver" finished-at="2025-07-28T20:45:31 IST" duration-ms="2470" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateDriver -->
-        <test-method signature="verifyAddingTheProductToCartFromSearchResultsPage()[pri:3, instance:web.automation.tests.AddToCartTests@35d019a3]" started-at="2025-07-17T16:56:34 IST" name="verifyAddingTheProductToCartFromSearchResultsPage" finished-at="2025-07-17T16:56:37 IST" duration-ms="2919" status="PASS">
+        <test-method signature="verifyAddingTheProductToCartFromSearchResultsPage()[pri:3, instance:web.automation.tests.AddToCartTests@2ef14fe]" started-at="2025-07-28T20:45:31 IST" name="verifyAddingTheProductToCartFromSearchResultsPage" finished-at="2025-07-28T20:45:35 IST" duration-ms="4050" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddingTheProductToCartFromSearchResultsPage -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:web.automation.tests.AddToCartTests@35d019a3]" started-at="2025-07-17T16:56:37 IST" name="quitDriver" finished-at="2025-07-17T16:56:37 IST" duration-ms="174" status="PASS">
+        <test-method is-config="true" signature="quitDriver(org.testng.ITestResult)[pri:0, instance:web.automation.tests.AddToCartTests@2ef14fe]" started-at="2025-07-28T20:45:35 IST" name="quitDriver" finished-at="2025-07-28T20:45:35 IST" duration-ms="357" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddingTheProductToCartFromSearchResultsPage status=SUCCESS method=AddToCartTests.verifyAddingTheProductToCartFromSearchResultsPage()[pri:3, instance:web.automation.tests.AddToCartTests@2ef14fe] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method is-config="true" signature="initiateDriver()[pri:0, instance:web.automation.tests.AddToCartTests@35d019a3]" started-at="2025-07-17T16:56:37 IST" name="initiateDriver" finished-at="2025-07-17T16:56:39 IST" duration-ms="1769" status="PASS">
+        <test-method is-config="true" signature="initiateDriver(java.lang.String)[pri:0, instance:web.automation.tests.AddToCartTests@2ef14fe]" started-at="2025-07-28T20:45:45 IST" name="initiateDriver" finished-at="2025-07-28T20:45:47 IST" duration-ms="2081" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateDriver -->
-        <test-method signature="verifyingTheProductToCartFromTheRelatedProductsSectionOfTheProductDisplayPage()[pri:4, instance:web.automation.tests.AddToCartTests@35d019a3]" started-at="2025-07-17T16:56:39 IST" name="verifyingTheProductToCartFromTheRelatedProductsSectionOfTheProductDisplayPage" finished-at="2025-07-17T16:56:40 IST" duration-ms="1217" status="PASS">
+        <test-method signature="verifyingTheProductToCartFromTheRelatedProductsSectionOfTheProductDisplayPage()[pri:4, instance:web.automation.tests.AddToCartTests@2ef14fe]" started-at="2025-07-28T20:45:47 IST" name="verifyingTheProductToCartFromTheRelatedProductsSectionOfTheProductDisplayPage" finished-at="2025-07-28T20:45:49 IST" duration-ms="1849" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyingTheProductToCartFromTheRelatedProductsSectionOfTheProductDisplayPage -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:web.automation.tests.AddToCartTests@35d019a3]" started-at="2025-07-17T16:56:40 IST" name="quitDriver" finished-at="2025-07-17T16:56:40 IST" duration-ms="175" status="PASS">
+        <test-method is-config="true" signature="quitDriver(org.testng.ITestResult)[pri:0, instance:web.automation.tests.AddToCartTests@2ef14fe]" started-at="2025-07-28T20:45:49 IST" name="quitDriver" finished-at="2025-07-28T20:45:49 IST" duration-ms="200" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyingTheProductToCartFromTheRelatedProductsSectionOfTheProductDisplayPage status=SUCCESS method=AddToCartTests.verifyingTheProductToCartFromTheRelatedProductsSectionOfTheProductDisplayPage()[pri:4, instance:web.automation.tests.AddToCartTests@2ef14fe] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method is-config="true" signature="initiateDriver()[pri:0, instance:web.automation.tests.AddToCartTests@35d019a3]" started-at="2025-07-17T16:56:40 IST" name="initiateDriver" finished-at="2025-07-17T16:56:42 IST" duration-ms="1741" status="PASS">
+        <test-method is-config="true" signature="initiateDriver(java.lang.String)[pri:0, instance:web.automation.tests.AddToCartTests@2ef14fe]" started-at="2025-07-28T20:45:49 IST" name="initiateDriver" finished-at="2025-07-28T20:45:51 IST" duration-ms="1964" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateDriver -->
-        <test-method signature="verifyAddingTheProductToCartFromTheProductsDisplayedInTheCategoryOrSubcategoryPage()[pri:5, instance:web.automation.tests.AddToCartTests@35d019a3]" started-at="2025-07-17T16:56:42 IST" name="verifyAddingTheProductToCartFromTheProductsDisplayedInTheCategoryOrSubcategoryPage" finished-at="2025-07-17T16:56:43 IST" duration-ms="1123" status="PASS">
+        <test-method signature="verifyAddingTheProductToCartFromTheProductsDisplayedInTheCategoryOrSubcategoryPage()[pri:5, instance:web.automation.tests.AddToCartTests@2ef14fe]" started-at="2025-07-28T20:45:51 IST" name="verifyAddingTheProductToCartFromTheProductsDisplayedInTheCategoryOrSubcategoryPage" finished-at="2025-07-28T20:45:53 IST" duration-ms="1860" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddingTheProductToCartFromTheProductsDisplayedInTheCategoryOrSubcategoryPage -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:web.automation.tests.AddToCartTests@35d019a3]" started-at="2025-07-17T16:56:43 IST" name="quitDriver" finished-at="2025-07-17T16:56:43 IST" duration-ms="184" status="PASS">
+        <test-method is-config="true" signature="quitDriver(org.testng.ITestResult)[pri:0, instance:web.automation.tests.AddToCartTests@2ef14fe]" started-at="2025-07-28T20:45:53 IST" name="quitDriver" finished-at="2025-07-28T20:45:53 IST" duration-ms="297" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddingTheProductToCartFromTheProductsDisplayedInTheCategoryOrSubcategoryPage status=SUCCESS method=AddToCartTests.verifyAddingTheProductToCartFromTheProductsDisplayedInTheCategoryOrSubcategoryPage()[pri:5, instance:web.automation.tests.AddToCartTests@2ef14fe] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method is-config="true" signature="initiateDriver()[pri:0, instance:web.automation.tests.AddToCartTests@35d019a3]" started-at="2025-07-17T16:56:43 IST" name="initiateDriver" finished-at="2025-07-17T16:56:45 IST" duration-ms="1609" status="PASS">
+        <test-method is-config="true" signature="initiateDriver(java.lang.String)[pri:0, instance:web.automation.tests.AddToCartTests@2ef14fe]" started-at="2025-07-28T20:45:59 IST" name="initiateDriver" finished-at="2025-07-28T20:46:02 IST" duration-ms="3608" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateDriver -->
-        <test-method signature="verifyAddingTheProductToCartFromProductComparisonPage()[pri:7, instance:web.automation.tests.AddToCartTests@35d019a3]" started-at="2025-07-17T16:56:45 IST" name="verifyAddingTheProductToCartFromProductComparisonPage" finished-at="2025-07-17T16:56:46 IST" duration-ms="1142" status="PASS">
+        <test-method signature="verifyAddingTheProductToCartFromProductComparisonPage()[pri:7, instance:web.automation.tests.AddToCartTests@2ef14fe]" started-at="2025-07-28T20:46:02 IST" name="verifyAddingTheProductToCartFromProductComparisonPage" finished-at="2025-07-28T20:46:05 IST" duration-ms="2332" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddingTheProductToCartFromProductComparisonPage -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:web.automation.tests.AddToCartTests@35d019a3]" started-at="2025-07-17T16:56:46 IST" name="quitDriver" finished-at="2025-07-17T16:56:46 IST" duration-ms="186" status="PASS">
+        <test-method is-config="true" signature="quitDriver(org.testng.ITestResult)[pri:0, instance:web.automation.tests.AddToCartTests@2ef14fe]" started-at="2025-07-28T20:46:05 IST" name="quitDriver" finished-at="2025-07-28T20:46:05 IST" duration-ms="203" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddingTheProductToCartFromProductComparisonPage status=SUCCESS method=AddToCartTests.verifyAddingTheProductToCartFromProductComparisonPage()[pri:7, instance:web.automation.tests.AddToCartTests@2ef14fe] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- web.automation.tests.AddToCartTests -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="web.automation.tests.WishListTests">
+        <test-method is-config="true" signature="initiateDriver(java.lang.String)[pri:0, instance:web.automation.tests.WishListTests@77102b91]" started-at="2025-07-28T20:44:42 IST" name="initiateDriver" finished-at="2025-07-28T20:44:44 IST" duration-ms="2221" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateDriver -->
+        <test-method signature="verifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheRelatedProductsSectionOfProductDisplayPage()[pri:1, instance:web.automation.tests.WishListTests@77102b91]" started-at="2025-07-28T20:44:44 IST" name="verifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheRelatedProductsSectionOfProductDisplayPage" finished-at="2025-07-28T20:44:55 IST" duration-ms="10378" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheRelatedProductsSectionOfProductDisplayPage -->
+        <test-method is-config="true" signature="quitDriver(org.testng.ITestResult)[pri:0, instance:web.automation.tests.WishListTests@77102b91]" started-at="2025-07-28T20:44:55 IST" name="quitDriver" finished-at="2025-07-28T20:44:55 IST" duration-ms="552" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheRelatedProductsSectionOfProductDisplayPage status=SUCCESS method=WishListTests.verifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheRelatedProductsSectionOfProductDisplayPage()[pri:1, instance:web.automation.tests.WishListTests@77102b91] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="initiateDriver(java.lang.String)[pri:0, instance:web.automation.tests.WishListTests@77102b91]" started-at="2025-07-28T20:44:59 IST" name="initiateDriver" finished-at="2025-07-28T20:45:01 IST" duration-ms="2023" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateDriver -->
+        <test-method signature="VerifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheFeaturedSectionOfHomePage()[pri:2, instance:web.automation.tests.WishListTests@77102b91]" started-at="2025-07-28T20:45:01 IST" name="VerifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheFeaturedSectionOfHomePage" finished-at="2025-07-28T20:45:09 IST" duration-ms="7257" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Qafox.com"}
+  (Session info: chrome=136.0.7103.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1e8b2ed9d8adb2de072446a82788aedd, findElement {value=Qafox.com, using=link text}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.93, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\VICKY\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49839}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49839/devtoo..., se:cdpVersion: 136.0.7103.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1e8b2ed9d8adb2de072446a82788aedd]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Qafox.com"}
+  (Session info: chrome=136.0.7103.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1e8b2ed9d8adb2de072446a82788aedd, findElement {value=Qafox.com, using=link text}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.93, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\VICKY\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49839}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49839/devtoo..., se:cdpVersion: 136.0.7103.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1e8b2ed9d8adb2de072446a82788aedd
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+at web.automation.utils.CommonHelperMethods.handlingStaleElementException(CommonHelperMethods.java:37)
+at web.automation.tests.WishListTests.VerifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheFeaturedSectionOfHomePage(WishListTests.java:57)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheFeaturedSectionOfHomePage -->
+        <test-method is-config="true" signature="quitDriver(org.testng.ITestResult)[pri:0, instance:web.automation.tests.WishListTests@77102b91]" started-at="2025-07-28T20:45:09 IST" name="quitDriver" finished-at="2025-07-28T20:45:09 IST" duration-ms="752" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheFeaturedSectionOfHomePage status=FAILURE method=WishListTests.VerifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheFeaturedSectionOfHomePage()[pri:2, instance:web.automation.tests.WishListTests@77102b91] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="initiateDriver(java.lang.String)[pri:0, instance:web.automation.tests.WishListTests@77102b91]" started-at="2025-07-28T20:45:17 IST" name="initiateDriver" finished-at="2025-07-28T20:45:20 IST" duration-ms="3362" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateDriver -->
+        <test-method signature="VerifyAddingTheProductToWishListFromTheProductsDisplayedInTheCategoryOrSubCategoryPage()[pri:3, instance:web.automation.tests.WishListTests@77102b91]" started-at="2025-07-28T20:45:20 IST" name="VerifyAddingTheProductToWishListFromTheProductsDisplayedInTheCategoryOrSubCategoryPage" finished-at="2025-07-28T20:45:28 IST" duration-ms="8015" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyAddingTheProductToWishListFromTheProductsDisplayedInTheCategoryOrSubCategoryPage -->
+        <test-method is-config="true" signature="quitDriver(org.testng.ITestResult)[pri:0, instance:web.automation.tests.WishListTests@77102b91]" started-at="2025-07-28T20:45:28 IST" name="quitDriver" finished-at="2025-07-28T20:45:28 IST" duration-ms="224" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyAddingTheProductToWishListFromTheProductsDisplayedInTheCategoryOrSubCategoryPage status=SUCCESS method=WishListTests.VerifyAddingTheProductToWishListFromTheProductsDisplayedInTheCategoryOrSubCategoryPage()[pri:3, instance:web.automation.tests.WishListTests@77102b91] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="initiateDriver(java.lang.String)[pri:0, instance:web.automation.tests.WishListTests@77102b91]" started-at="2025-07-28T20:45:35 IST" name="initiateDriver" finished-at="2025-07-28T20:45:37 IST" duration-ms="2084" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateDriver -->
+        <test-method signature="verifyAddingAProductToWishListPageFromTheSearchResultsPage()[pri:4, instance:web.automation.tests.WishListTests@77102b91]" started-at="2025-07-28T20:45:37 IST" name="verifyAddingAProductToWishListPageFromTheSearchResultsPage" finished-at="2025-07-28T20:45:44 IST" duration-ms="7164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddingAProductToWishListPageFromTheSearchResultsPage -->
+        <test-method is-config="true" signature="quitDriver(org.testng.ITestResult)[pri:0, instance:web.automation.tests.WishListTests@77102b91]" started-at="2025-07-28T20:45:44 IST" name="quitDriver" finished-at="2025-07-28T20:45:45 IST" duration-ms="321" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddingAProductToWishListPageFromTheSearchResultsPage status=SUCCESS method=WishListTests.verifyAddingAProductToWishListPageFromTheSearchResultsPage()[pri:4, instance:web.automation.tests.WishListTests@77102b91] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="initiateDriver(java.lang.String)[pri:0, instance:web.automation.tests.WishListTests@77102b91]" started-at="2025-07-28T20:45:53 IST" name="initiateDriver" finished-at="2025-07-28T20:45:56 IST" duration-ms="3274" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateDriver -->
+        <test-method signature="verifyNavigatingToMyWishListPageUsingTheWishListHeaderOption()[pri:5, instance:web.automation.tests.WishListTests@77102b91]" started-at="2025-07-28T20:45:56 IST" name="verifyNavigatingToMyWishListPageUsingTheWishListHeaderOption" finished-at="2025-07-28T20:45:58 IST" duration-ms="2148" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=136.0.7103.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [546317b281f0ddca08f48788b6bc6bab, sendKeysToElement {id=f.D8B7EB4E37ED06615CCC0340A9BE3D41.d.471423AB77F0B5D26A17A8A27FE8F310.e.86, value=[Ljava.lang.CharSequence;@1815cf20}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.93, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\VICKY\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50284}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50284/devtoo..., se:cdpVersion: 136.0.7103.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (546317b281f0ddca08f48788b6bc6bab)] -> xpath: //div[@id='search']//input]
+Session ID: 546317b281f0ddca08f48788b6bc6bab]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=136.0.7103.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [546317b281f0ddca08f48788b6bc6bab, sendKeysToElement {id=f.D8B7EB4E37ED06615CCC0340A9BE3D41.d.471423AB77F0B5D26A17A8A27FE8F310.e.86, value=[Ljava.lang.CharSequence;@1815cf20}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.93, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\VICKY\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50284}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50284/devtoo..., se:cdpVersion: 136.0.7103.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (546317b281f0ddca08f48788b6bc6bab)] -> xpath: //div[@id='search']//input]
+Session ID: 546317b281f0ddca08f48788b6bc6bab
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy15.sendKeys(Unknown Source)
+at web.automation.tests.WishListTests.verifyNavigatingToMyWishListPageUsingTheWishListHeaderOption(WishListTests.java:123)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNavigatingToMyWishListPageUsingTheWishListHeaderOption -->
+        <test-method is-config="true" signature="quitDriver(org.testng.ITestResult)[pri:0, instance:web.automation.tests.WishListTests@77102b91]" started-at="2025-07-28T20:45:58 IST" name="quitDriver" finished-at="2025-07-28T20:45:59 IST" duration-ms="393" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNavigatingToMyWishListPageUsingTheWishListHeaderOption status=FAILURE method=WishListTests.verifyNavigatingToMyWishListPageUsingTheWishListHeaderOption()[pri:5, instance:web.automation.tests.WishListTests@77102b91] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="initiateDriver(java.lang.String)[pri:0, instance:web.automation.tests.WishListTests@77102b91]" started-at="2025-07-28T20:46:05 IST" name="initiateDriver" finished-at="2025-07-28T20:46:07 IST" duration-ms="1797" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateDriver -->
+        <test-method signature="verifyNavigatingToMyWishListPageFromTheFooteroptions()[pri:8, instance:web.automation.tests.WishListTests@77102b91]" started-at="2025-07-28T20:46:07 IST" name="verifyNavigatingToMyWishListPageFromTheFooteroptions" finished-at="2025-07-28T20:46:12 IST" duration-ms="5676" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNavigatingToMyWishListPageFromTheFooteroptions -->
+        <test-method is-config="true" signature="quitDriver(org.testng.ITestResult)[pri:0, instance:web.automation.tests.WishListTests@77102b91]" started-at="2025-07-28T20:46:12 IST" name="quitDriver" finished-at="2025-07-28T20:46:13 IST" duration-ms="189" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNavigatingToMyWishListPageFromTheFooteroptions status=SUCCESS method=WishListTests.verifyNavigatingToMyWishListPageFromTheFooteroptions()[pri:8, instance:web.automation.tests.WishListTests@77102b91] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- web.automation.tests.WishListTests -->
+    </test> <!-- ChromeTest -->
+    <test started-at="2025-07-28T20:44:37 IST" name="EdgeTest" finished-at="2025-07-28T20:46:21 IST" duration-ms="103870">
+      <class name="web.automation.tests.LoginPageTests">
+        <test-method is-config="true" signature="initiateDriver(java.lang.String)[pri:0, instance:web.automation.tests.LoginPageTests@1921ad94]" started-at="2025-07-28T20:44:37 IST" name="initiateDriver" finished-at="2025-07-28T20:44:40 IST" duration-ms="2992" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateDriver -->
+        <test-method signature="loginUserWithValidCredentials()[pri:1, instance:web.automation.tests.LoginPageTests@1921ad94]" started-at="2025-07-28T20:44:40 IST" name="loginUserWithValidCredentials" finished-at="2025-07-28T20:44:42 IST" duration-ms="2396" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUserWithValidCredentials -->
+        <test-method is-config="true" signature="quitDriver(org.testng.ITestResult)[pri:0, instance:web.automation.tests.LoginPageTests@1921ad94]" started-at="2025-07-28T20:44:42 IST" name="quitDriver" finished-at="2025-07-28T20:44:42 IST" duration-ms="325" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginUserWithValidCredentials status=SUCCESS method=LoginPageTests.loginUserWithValidCredentials()[pri:1, instance:web.automation.tests.LoginPageTests@1921ad94] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- web.automation.tests.LoginPageTests -->
+      <class name="web.automation.tests.AddToCartTests">
+        <test-method is-config="true" signature="initiateDriver(java.lang.String)[pri:0, instance:web.automation.tests.AddToCartTests@ee86bcb]" started-at="2025-07-28T20:44:55 IST" name="initiateDriver" finished-at="2025-07-28T20:44:58 IST" duration-ms="2633" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateDriver -->
+        <test-method signature="verifyAddingTheProductToCartFromProductDisplayPage()[pri:1, instance:web.automation.tests.AddToCartTests@ee86bcb]" started-at="2025-07-28T20:44:58 IST" name="verifyAddingTheProductToCartFromProductDisplayPage" finished-at="2025-07-28T20:44:59 IST" duration-ms="1616" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddingTheProductToCartFromProductDisplayPage -->
+        <test-method is-config="true" signature="quitDriver(org.testng.ITestResult)[pri:0, instance:web.automation.tests.AddToCartTests@ee86bcb]" started-at="2025-07-28T20:44:59 IST" name="quitDriver" finished-at="2025-07-28T20:45:00 IST" duration-ms="317" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddingTheProductToCartFromProductDisplayPage status=SUCCESS method=AddToCartTests.verifyAddingTheProductToCartFromProductDisplayPage()[pri:1, instance:web.automation.tests.AddToCartTests@ee86bcb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="initiateDriver(java.lang.String)[pri:0, instance:web.automation.tests.AddToCartTests@ee86bcb]" started-at="2025-07-28T20:45:15 IST" name="initiateDriver" finished-at="2025-07-28T20:45:17 IST" duration-ms="2451" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateDriver -->
+        <test-method signature="verifyAddingTheProductToCartFromWishListPage()[pri:2, instance:web.automation.tests.AddToCartTests@ee86bcb]" started-at="2025-07-28T20:45:17 IST" name="verifyAddingTheProductToCartFromWishListPage" finished-at="2025-07-28T20:45:23 IST" duration-ms="5847" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddingTheProductToCartFromWishListPage -->
+        <test-method is-config="true" signature="quitDriver(org.testng.ITestResult)[pri:0, instance:web.automation.tests.AddToCartTests@ee86bcb]" started-at="2025-07-28T20:45:23 IST" name="quitDriver" finished-at="2025-07-28T20:45:23 IST" duration-ms="198" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddingTheProductToCartFromWishListPage status=SUCCESS method=AddToCartTests.verifyAddingTheProductToCartFromWishListPage()[pri:2, instance:web.automation.tests.AddToCartTests@ee86bcb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="initiateDriver(java.lang.String)[pri:0, instance:web.automation.tests.AddToCartTests@ee86bcb]" started-at="2025-07-28T20:45:34 IST" name="initiateDriver" finished-at="2025-07-28T20:45:37 IST" duration-ms="3027" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateDriver -->
+        <test-method signature="verifyAddingTheProductToCartFromSearchResultsPage()[pri:3, instance:web.automation.tests.AddToCartTests@ee86bcb]" started-at="2025-07-28T20:45:37 IST" name="verifyAddingTheProductToCartFromSearchResultsPage" finished-at="2025-07-28T20:45:40 IST" duration-ms="3281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddingTheProductToCartFromSearchResultsPage -->
+        <test-method is-config="true" signature="quitDriver(org.testng.ITestResult)[pri:0, instance:web.automation.tests.AddToCartTests@ee86bcb]" started-at="2025-07-28T20:45:40 IST" name="quitDriver" finished-at="2025-07-28T20:45:40 IST" duration-ms="202" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddingTheProductToCartFromSearchResultsPage status=SUCCESS method=AddToCartTests.verifyAddingTheProductToCartFromSearchResultsPage()[pri:3, instance:web.automation.tests.AddToCartTests@ee86bcb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="initiateDriver(java.lang.String)[pri:0, instance:web.automation.tests.AddToCartTests@ee86bcb]" started-at="2025-07-28T20:45:51 IST" name="initiateDriver" finished-at="2025-07-28T20:45:53 IST" duration-ms="2323" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateDriver -->
+        <test-method signature="verifyingTheProductToCartFromTheRelatedProductsSectionOfTheProductDisplayPage()[pri:4, instance:web.automation.tests.AddToCartTests@ee86bcb]" started-at="2025-07-28T20:45:53 IST" name="verifyingTheProductToCartFromTheRelatedProductsSectionOfTheProductDisplayPage" finished-at="2025-07-28T20:45:55 IST" duration-ms="1970" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyingTheProductToCartFromTheRelatedProductsSectionOfTheProductDisplayPage -->
+        <test-method is-config="true" signature="quitDriver(org.testng.ITestResult)[pri:0, instance:web.automation.tests.AddToCartTests@ee86bcb]" started-at="2025-07-28T20:45:55 IST" name="quitDriver" finished-at="2025-07-28T20:45:55 IST" duration-ms="323" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyingTheProductToCartFromTheRelatedProductsSectionOfTheProductDisplayPage status=SUCCESS method=AddToCartTests.verifyingTheProductToCartFromTheRelatedProductsSectionOfTheProductDisplayPage()[pri:4, instance:web.automation.tests.AddToCartTests@ee86bcb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="initiateDriver(java.lang.String)[pri:0, instance:web.automation.tests.AddToCartTests@ee86bcb]" started-at="2025-07-28T20:45:55 IST" name="initiateDriver" finished-at="2025-07-28T20:45:58 IST" duration-ms="2376" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateDriver -->
+        <test-method signature="verifyAddingTheProductToCartFromTheProductsDisplayedInTheCategoryOrSubcategoryPage()[pri:5, instance:web.automation.tests.AddToCartTests@ee86bcb]" started-at="2025-07-28T20:45:58 IST" name="verifyAddingTheProductToCartFromTheProductsDisplayedInTheCategoryOrSubcategoryPage" finished-at="2025-07-28T20:45:59 IST" duration-ms="1737" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddingTheProductToCartFromTheProductsDisplayedInTheCategoryOrSubcategoryPage -->
+        <test-method is-config="true" signature="quitDriver(org.testng.ITestResult)[pri:0, instance:web.automation.tests.AddToCartTests@ee86bcb]" started-at="2025-07-28T20:45:59 IST" name="quitDriver" finished-at="2025-07-28T20:46:00 IST" duration-ms="686" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddingTheProductToCartFromTheProductsDisplayedInTheCategoryOrSubcategoryPage status=SUCCESS method=AddToCartTests.verifyAddingTheProductToCartFromTheProductsDisplayedInTheCategoryOrSubcategoryPage()[pri:5, instance:web.automation.tests.AddToCartTests@ee86bcb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="initiateDriver(java.lang.String)[pri:0, instance:web.automation.tests.AddToCartTests@ee86bcb]" started-at="2025-07-28T20:46:09 IST" name="initiateDriver" finished-at="2025-07-28T20:46:11 IST" duration-ms="2149" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateDriver -->
+        <test-method signature="verifyAddingTheProductToCartFromProductComparisonPage()[pri:7, instance:web.automation.tests.AddToCartTests@ee86bcb]" started-at="2025-07-28T20:46:11 IST" name="verifyAddingTheProductToCartFromProductComparisonPage" finished-at="2025-07-28T20:46:13 IST" duration-ms="1707" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddingTheProductToCartFromProductComparisonPage -->
+        <test-method is-config="true" signature="quitDriver(org.testng.ITestResult)[pri:0, instance:web.automation.tests.AddToCartTests@ee86bcb]" started-at="2025-07-28T20:46:13 IST" name="quitDriver" finished-at="2025-07-28T20:46:13 IST" duration-ms="300" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddingTheProductToCartFromProductComparisonPage status=SUCCESS method=AddToCartTests.verifyAddingTheProductToCartFromProductComparisonPage()[pri:7, instance:web.automation.tests.AddToCartTests@ee86bcb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- web.automation.tests.AddToCartTests -->
+      <class name="web.automation.tests.WishListTests">
+        <test-method is-config="true" signature="initiateDriver(java.lang.String)[pri:0, instance:web.automation.tests.WishListTests@177bea38]" started-at="2025-07-28T20:44:42 IST" name="initiateDriver" finished-at="2025-07-28T20:44:45 IST" duration-ms="2636" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateDriver -->
+        <test-method signature="verifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheRelatedProductsSectionOfProductDisplayPage()[pri:1, instance:web.automation.tests.WishListTests@177bea38]" started-at="2025-07-28T20:44:45 IST" name="verifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheRelatedProductsSectionOfProductDisplayPage" finished-at="2025-07-28T20:44:55 IST" duration-ms="9502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheRelatedProductsSectionOfProductDisplayPage -->
+        <test-method is-config="true" signature="quitDriver(org.testng.ITestResult)[pri:0, instance:web.automation.tests.WishListTests@177bea38]" started-at="2025-07-28T20:44:55 IST" name="quitDriver" finished-at="2025-07-28T20:44:55 IST" duration-ms="440" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheRelatedProductsSectionOfProductDisplayPage status=SUCCESS method=WishListTests.verifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheRelatedProductsSectionOfProductDisplayPage()[pri:1, instance:web.automation.tests.WishListTests@177bea38] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="initiateDriver(java.lang.String)[pri:0, instance:web.automation.tests.WishListTests@177bea38]" started-at="2025-07-28T20:45:00 IST" name="initiateDriver" finished-at="2025-07-28T20:45:02 IST" duration-ms="2393" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateDriver -->
+        <test-method signature="VerifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheFeaturedSectionOfHomePage()[pri:2, instance:web.automation.tests.WishListTests@177bea38]" started-at="2025-07-28T20:45:02 IST" name="VerifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheFeaturedSectionOfHomePage" finished-at="2025-07-28T20:45:15 IST" duration-ms="12647" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheFeaturedSectionOfHomePage -->
+        <test-method is-config="true" signature="quitDriver(org.testng.ITestResult)[pri:0, instance:web.automation.tests.WishListTests@177bea38]" started-at="2025-07-28T20:45:15 IST" name="quitDriver" finished-at="2025-07-28T20:45:15 IST" duration-ms="280" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheFeaturedSectionOfHomePage status=SUCCESS method=WishListTests.VerifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheFeaturedSectionOfHomePage()[pri:2, instance:web.automation.tests.WishListTests@177bea38] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="initiateDriver(java.lang.String)[pri:0, instance:web.automation.tests.WishListTests@177bea38]" started-at="2025-07-28T20:45:23 IST" name="initiateDriver" finished-at="2025-07-28T20:45:25 IST" duration-ms="1999" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateDriver -->
+        <test-method signature="VerifyAddingTheProductToWishListFromTheProductsDisplayedInTheCategoryOrSubCategoryPage()[pri:3, instance:web.automation.tests.WishListTests@177bea38]" started-at="2025-07-28T20:45:25 IST" name="VerifyAddingTheProductToWishListFromTheProductsDisplayedInTheCategoryOrSubCategoryPage" finished-at="2025-07-28T20:45:33 IST" duration-ms="7905" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyAddingTheProductToWishListFromTheProductsDisplayedInTheCategoryOrSubCategoryPage -->
+        <test-method is-config="true" signature="quitDriver(org.testng.ITestResult)[pri:0, instance:web.automation.tests.WishListTests@177bea38]" started-at="2025-07-28T20:45:33 IST" name="quitDriver" finished-at="2025-07-28T20:45:34 IST" duration-ms="263" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyAddingTheProductToWishListFromTheProductsDisplayedInTheCategoryOrSubCategoryPage status=SUCCESS method=WishListTests.VerifyAddingTheProductToWishListFromTheProductsDisplayedInTheCategoryOrSubCategoryPage()[pri:3, instance:web.automation.tests.WishListTests@177bea38] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="initiateDriver(java.lang.String)[pri:0, instance:web.automation.tests.WishListTests@177bea38]" started-at="2025-07-28T20:45:40 IST" name="initiateDriver" finished-at="2025-07-28T20:45:42 IST" duration-ms="2212" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateDriver -->
+        <test-method signature="verifyAddingAProductToWishListPageFromTheSearchResultsPage()[pri:4, instance:web.automation.tests.WishListTests@177bea38]" started-at="2025-07-28T20:45:42 IST" name="verifyAddingAProductToWishListPageFromTheSearchResultsPage" finished-at="2025-07-28T20:45:50 IST" duration-ms="7948" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddingAProductToWishListPageFromTheSearchResultsPage -->
+        <test-method is-config="true" signature="quitDriver(org.testng.ITestResult)[pri:0, instance:web.automation.tests.WishListTests@177bea38]" started-at="2025-07-28T20:45:50 IST" name="quitDriver" finished-at="2025-07-28T20:45:51 IST" duration-ms="459" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddingAProductToWishListPageFromTheSearchResultsPage status=SUCCESS method=WishListTests.verifyAddingAProductToWishListPageFromTheSearchResultsPage()[pri:4, instance:web.automation.tests.WishListTests@177bea38] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="initiateDriver(java.lang.String)[pri:0, instance:web.automation.tests.WishListTests@177bea38]" started-at="2025-07-28T20:46:00 IST" name="initiateDriver" finished-at="2025-07-28T20:46:02 IST" duration-ms="2199" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateDriver -->
+        <test-method signature="verifyNavigatingToMyWishListPageUsingTheWishListHeaderOption()[pri:5, instance:web.automation.tests.WishListTests@177bea38]" started-at="2025-07-28T20:46:02 IST" name="verifyNavigatingToMyWishListPageUsingTheWishListHeaderOption" finished-at="2025-07-28T20:46:09 IST" duration-ms="6196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNavigatingToMyWishListPageUsingTheWishListHeaderOption -->
+        <test-method is-config="true" signature="quitDriver(org.testng.ITestResult)[pri:0, instance:web.automation.tests.WishListTests@177bea38]" started-at="2025-07-28T20:46:09 IST" name="quitDriver" finished-at="2025-07-28T20:46:09 IST" duration-ms="347" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNavigatingToMyWishListPageUsingTheWishListHeaderOption status=SUCCESS method=WishListTests.verifyNavigatingToMyWishListPageUsingTheWishListHeaderOption()[pri:5, instance:web.automation.tests.WishListTests@177bea38] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="initiateDriver(java.lang.String)[pri:0, instance:web.automation.tests.WishListTests@177bea38]" started-at="2025-07-28T20:46:13 IST" name="initiateDriver" finished-at="2025-07-28T20:46:15 IST" duration-ms="2034" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateDriver -->
+        <test-method signature="verifyNavigatingToMyWishListPageFromTheFooteroptions()[pri:8, instance:web.automation.tests.WishListTests@177bea38]" started-at="2025-07-28T20:46:15 IST" name="verifyNavigatingToMyWishListPageFromTheFooteroptions" finished-at="2025-07-28T20:46:20 IST" duration-ms="5155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNavigatingToMyWishListPageFromTheFooteroptions -->
+        <test-method is-config="true" signature="quitDriver(org.testng.ITestResult)[pri:0, instance:web.automation.tests.WishListTests@177bea38]" started-at="2025-07-28T20:46:20 IST" name="quitDriver" finished-at="2025-07-28T20:46:21 IST" duration-ms="289" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNavigatingToMyWishListPageFromTheFooteroptions status=SUCCESS method=WishListTests.verifyNavigatingToMyWishListPageFromTheFooteroptions()[pri:8, instance:web.automation.tests.WishListTests@177bea38] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- web.automation.tests.WishListTests -->
+    </test> <!-- EdgeTest -->
+  </suite> <!-- Suite -->
 </testng-results>
