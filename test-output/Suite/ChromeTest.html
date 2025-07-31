@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>11/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jul 28 20:44:37 IST 2025</td>
+<td>Started on:</td><td>Thu Jul 31 10:41:06 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>95 seconds (95970 ms)</td>
+<tr><td>Total time:</td><td>76 seconds (76264 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,16 +76,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='web.automation.tests.WishListTests.VerifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheFeaturedSectionOfHomePage()'><b>VerifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheFeaturedSectionOfHomePage</b><br>Test class: web.automation.tests.WishListTests</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Qafox.com&quot;}
+<td title='web.automation.tests.WishListTests.verifyNavigatingToMyWishListPageUsingTheWishListHeaderOption()'><b>verifyNavigatingToMyWishListPageUsingTheWishListHeaderOption</b><br>Test class: web.automation.tests.WishListTests</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;content&apos;]//tbody//td[2]&quot;}
   (Session info: chrome=136.0.7103.93)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1e8b2ed9d8adb2de072446a82788aedd, findElement {value=Qafox.com, using=link text}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.93, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\VICKY\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49839}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49839/devtoo..., se:cdpVersion: 136.0.7103.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1e8b2ed9d8adb2de072446a82788aedd
+Command: [061cb6c2e9adf3e990320c7c6ae0edef, findElement {value=//div[@id=&apos;content&apos;]//tbody//td[2], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.93, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\VICKY\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51911}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51911/devtoo..., se:cdpVersion: 136.0.7103.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 061cb6c2e9adf3e990320c7c6ae0edef
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -99,24 +99,23 @@ Session ID: 1e8b2ed9d8adb2de072446a82788aedd
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
-	at web.automation.utils.CommonHelperMethods.handlingStaleElementException(CommonHelperMethods.java:37)
-	at web.automation.tests.WishListTests.VerifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheFeaturedSectionOfHomePage(WishListTests.java:57)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
+	at web.automation.tests.WishListTests.verifyNavigatingToMyWishListPageUsingTheWishListHeaderOption(WishListTests.java:130)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1489929382", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1489929382'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Qafox.com&quot;}
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace20214668", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace20214668'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;content&apos;]//tbody//td[2]&quot;}
   (Session info: chrome=136.0.7103.93)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1e8b2ed9d8adb2de072446a82788aedd, findElement {value=Qafox.com, using=link text}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.93, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\VICKY\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49839}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49839/devtoo..., se:cdpVersion: 136.0.7103.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1e8b2ed9d8adb2de072446a82788aedd
+Command: [061cb6c2e9adf3e990320c7c6ae0edef, findElement {value=//div[@id=&apos;content&apos;]//tbody//td[2], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.93, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\VICKY\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51911}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51911/devtoo..., se:cdpVersion: 136.0.7103.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 061cb6c2e9adf3e990320c7c6ae0edef
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -133,9 +132,8 @@ Session ID: 1e8b2ed9d8adb2de072446a82788aedd
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
-	at web.automation.utils.CommonHelperMethods.handlingStaleElementException(CommonHelperMethods.java:37)
-	at web.automation.tests.WishListTests.VerifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheFeaturedSectionOfHomePage(WishListTests.java:57)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
+	at web.automation.tests.WishListTests.verifyNavigatingToMyWishListPageUsingTheWishListHeaderOption(WishListTests.java:130)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -157,20 +155,20 @@ Session ID: 1e8b2ed9d8adb2de072446a82788aedd
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 </pre></div></td>
-<td>7</td>
+<td>9</td>
 <td>web.automation.tests.WishListTests@77102b91</td></tr>
 <tr>
-<td title='web.automation.tests.WishListTests.verifyNavigatingToMyWishListPageUsingTheWishListHeaderOption()'><b>verifyNavigatingToMyWishListPageUsingTheWishListHeaderOption</b><br>Test class: web.automation.tests.WishListTests</td>
+<td title='web.automation.tests.WishListTests.verifyAddingAProductToWishListPageFromTheSearchResultsPage()'><b>verifyAddingAProductToWishListPageFromTheSearchResultsPage</b><br>Test class: web.automation.tests.WishListTests</td>
 <td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
   (Session info: chrome=136.0.7103.93)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [546317b281f0ddca08f48788b6bc6bab, sendKeysToElement {id=f.D8B7EB4E37ED06615CCC0340A9BE3D41.d.471423AB77F0B5D26A17A8A27FE8F310.e.86, value=[Ljava.lang.CharSequence;@1815cf20}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.93, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\VICKY\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50284}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50284/devtoo..., se:cdpVersion: 136.0.7103.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (546317b281f0ddca08f48788b6bc6bab)] -&gt; xpath: //div[@id=&apos;search&apos;]//input]
-Session ID: 546317b281f0ddca08f48788b6bc6bab
+Command: [7b9e07a2190a5c7569809fc008c3becd, sendKeysToElement {value=[Ljava.lang.CharSequence;@480c450d, id=f.392BD6386E91DE46E71988A8B1029B2A.d.4F428BAA8EEBE300EBF86B64076264FF.e.90}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.93, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\VICKY\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51839}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51839/devtoo..., se:cdpVersion: 136.0.7103.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (7b9e07a2190a5c7569809fc008c3becd)] -&gt; xpath: //div[@id=&apos;search&apos;]//input]
+Session ID: 7b9e07a2190a5c7569809fc008c3becd
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -182,23 +180,23 @@ Session ID: 546317b281f0ddca08f48788b6bc6bab
 	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at jdk.proxy2/jdk.proxy2.$Proxy15.sendKeys(Unknown Source)
-	at web.automation.tests.WishListTests.verifyNavigatingToMyWishListPageUsingTheWishListHeaderOption(WishListTests.java:123)
+	at web.automation.tests.WishListTests.verifyAddingAProductToWishListPageFromTheSearchResultsPage(WishListTests.java:101)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1240162407", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1240162407'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace238336606", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace238336606'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
   (Session info: chrome=136.0.7103.93)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [546317b281f0ddca08f48788b6bc6bab, sendKeysToElement {id=f.D8B7EB4E37ED06615CCC0340A9BE3D41.d.471423AB77F0B5D26A17A8A27FE8F310.e.86, value=[Ljava.lang.CharSequence;@1815cf20}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.93, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\VICKY\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50284}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50284/devtoo..., se:cdpVersion: 136.0.7103.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (546317b281f0ddca08f48788b6bc6bab)] -&gt; xpath: //div[@id=&apos;search&apos;]//input]
-Session ID: 546317b281f0ddca08f48788b6bc6bab
+Command: [7b9e07a2190a5c7569809fc008c3becd, sendKeysToElement {value=[Ljava.lang.CharSequence;@480c450d, id=f.392BD6386E91DE46E71988A8B1029B2A.d.4F428BAA8EEBE300EBF86B64076264FF.e.90}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.93, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\VICKY\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51839}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51839/devtoo..., se:cdpVersion: 136.0.7103.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (7b9e07a2190a5c7569809fc008c3becd)] -&gt; xpath: //div[@id=&apos;search&apos;]//input]
+Session ID: 7b9e07a2190a5c7569809fc008c3becd
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -215,7 +213,7 @@ Session ID: 546317b281f0ddca08f48788b6bc6bab
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at jdk.proxy2/jdk.proxy2.$Proxy15.sendKeys(Unknown Source)
-	at web.automation.tests.WishListTests.verifyNavigatingToMyWishListPageUsingTheWishListHeaderOption(WishListTests.java:123)
+	at web.automation.tests.WishListTests.verifyAddingAProductToWishListPageFromTheSearchResultsPage(WishListTests.java:101)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -237,7 +235,7 @@ Session ID: 546317b281f0ddca08f48788b6bc6bab
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 </pre></div></td>
-<td>2</td>
+<td>1</td>
 <td>web.automation.tests.WishListTests@77102b91</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -251,17 +249,37 @@ Session ID: 546317b281f0ddca08f48788b6bc6bab
 <tr>
 <td title='web.automation.tests.LoginPageTests.loginUserWithValidCredentials()'><b>loginUserWithValidCredentials</b><br>Test class: web.automation.tests.LoginPageTests</td>
 <td></td>
-<td>2</td>
+<td>1</td>
 <td>web.automation.tests.LoginPageTests@265adfad</td></tr>
 <tr>
-<td title='web.automation.tests.WishListTests.verifyAddingAProductToWishListPageFromTheSearchResultsPage()'><b>verifyAddingAProductToWishListPageFromTheSearchResultsPage</b><br>Test class: web.automation.tests.WishListTests</td>
+<td title='web.automation.tests.AddToCartTests.verifyAddingTheProductToCartFromTheProductsDisplayedInTheCategoryOrSubcategoryPage()'><b>verifyAddingTheProductToCartFromTheProductsDisplayedInTheCategoryOrSubcategoryPage</b><br>Test class: web.automation.tests.AddToCartTests</td>
 <td></td>
-<td>7</td>
+<td>1</td>
+<td>web.automation.tests.AddToCartTests@2ef14fe</td></tr>
+<tr>
+<td title='web.automation.tests.AddToCartTests.verifyAddingTheProductToCartFromProductComparisonPage()'><b>verifyAddingTheProductToCartFromProductComparisonPage</b><br>Test class: web.automation.tests.AddToCartTests</td>
+<td></td>
+<td>1</td>
+<td>web.automation.tests.AddToCartTests@2ef14fe</td></tr>
+<tr>
+<td title='web.automation.tests.AddToCartTests.verifyAddingTheProductToCartFromSearchResultsPage()'><b>verifyAddingTheProductToCartFromSearchResultsPage</b><br>Test class: web.automation.tests.AddToCartTests</td>
+<td></td>
+<td>3</td>
+<td>web.automation.tests.AddToCartTests@2ef14fe</td></tr>
+<tr>
+<td title='web.automation.tests.AddToCartTests.verifyAddingTheProductToCartFromWishListPage()'><b>verifyAddingTheProductToCartFromWishListPage</b><br>Test class: web.automation.tests.AddToCartTests</td>
+<td></td>
+<td>3</td>
+<td>web.automation.tests.AddToCartTests@2ef14fe</td></tr>
+<tr>
+<td title='web.automation.tests.WishListTests.VerifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheFeaturedSectionOfHomePage()'><b>VerifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheFeaturedSectionOfHomePage</b><br>Test class: web.automation.tests.WishListTests</td>
+<td></td>
+<td>6</td>
 <td>web.automation.tests.WishListTests@77102b91</td></tr>
 <tr>
-<td title='web.automation.tests.WishListTests.verifyNavigatingToMyWishListPageFromTheFooteroptions()'><b>verifyNavigatingToMyWishListPageFromTheFooteroptions</b><br>Test class: web.automation.tests.WishListTests</td>
+<td title='web.automation.tests.WishListTests.verifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheRelatedProductsSectionOfProductDisplayPage()'><b>verifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheRelatedProductsSectionOfProductDisplayPage</b><br>Test class: web.automation.tests.WishListTests</td>
 <td></td>
-<td>5</td>
+<td>7</td>
 <td>web.automation.tests.WishListTests@77102b91</td></tr>
 <tr>
 <td title='web.automation.tests.AddToCartTests.verifyAddingTheProductToCartFromProductDisplayPage()'><b>verifyAddingTheProductToCartFromProductDisplayPage</b><br>Test class: web.automation.tests.AddToCartTests</td>
@@ -269,40 +287,20 @@ Session ID: 546317b281f0ddca08f48788b6bc6bab
 <td>1</td>
 <td>web.automation.tests.AddToCartTests@2ef14fe</td></tr>
 <tr>
-<td title='web.automation.tests.WishListTests.verifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheRelatedProductsSectionOfProductDisplayPage()'><b>verifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheRelatedProductsSectionOfProductDisplayPage</b><br>Test class: web.automation.tests.WishListTests</td>
-<td></td>
-<td>10</td>
-<td>web.automation.tests.WishListTests@77102b91</td></tr>
-<tr>
-<td title='web.automation.tests.AddToCartTests.verifyAddingTheProductToCartFromProductComparisonPage()'><b>verifyAddingTheProductToCartFromProductComparisonPage</b><br>Test class: web.automation.tests.AddToCartTests</td>
-<td></td>
-<td>2</td>
-<td>web.automation.tests.AddToCartTests@2ef14fe</td></tr>
-<tr>
-<td title='web.automation.tests.AddToCartTests.verifyAddingTheProductToCartFromTheProductsDisplayedInTheCategoryOrSubcategoryPage()'><b>verifyAddingTheProductToCartFromTheProductsDisplayedInTheCategoryOrSubcategoryPage</b><br>Test class: web.automation.tests.AddToCartTests</td>
+<td title='web.automation.tests.AddToCartTests.verifyingTheProductToCartFromTheRelatedProductsSectionOfTheProductDisplayPage()'><b>verifyingTheProductToCartFromTheRelatedProductsSectionOfTheProductDisplayPage</b><br>Test class: web.automation.tests.AddToCartTests</td>
 <td></td>
 <td>1</td>
 <td>web.automation.tests.AddToCartTests@2ef14fe</td></tr>
 <tr>
 <td title='web.automation.tests.WishListTests.VerifyAddingTheProductToWishListFromTheProductsDisplayedInTheCategoryOrSubCategoryPage()'><b>VerifyAddingTheProductToWishListFromTheProductsDisplayedInTheCategoryOrSubCategoryPage</b><br>Test class: web.automation.tests.WishListTests</td>
 <td></td>
-<td>8</td>
+<td>6</td>
 <td>web.automation.tests.WishListTests@77102b91</td></tr>
 <tr>
-<td title='web.automation.tests.AddToCartTests.verifyingTheProductToCartFromTheRelatedProductsSectionOfTheProductDisplayPage()'><b>verifyingTheProductToCartFromTheRelatedProductsSectionOfTheProductDisplayPage</b><br>Test class: web.automation.tests.AddToCartTests</td>
-<td></td>
-<td>1</td>
-<td>web.automation.tests.AddToCartTests@2ef14fe</td></tr>
-<tr>
-<td title='web.automation.tests.AddToCartTests.verifyAddingTheProductToCartFromWishListPage()'><b>verifyAddingTheProductToCartFromWishListPage</b><br>Test class: web.automation.tests.AddToCartTests</td>
+<td title='web.automation.tests.WishListTests.verifyNavigatingToMyWishListPageFromTheFooteroptions()'><b>verifyNavigatingToMyWishListPageFromTheFooteroptions</b><br>Test class: web.automation.tests.WishListTests</td>
 <td></td>
 <td>4</td>
-<td>web.automation.tests.AddToCartTests@2ef14fe</td></tr>
-<tr>
-<td title='web.automation.tests.AddToCartTests.verifyAddingTheProductToCartFromSearchResultsPage()'><b>verifyAddingTheProductToCartFromSearchResultsPage</b><br>Test class: web.automation.tests.AddToCartTests</td>
-<td></td>
-<td>4</td>
-<td>web.automation.tests.AddToCartTests@2ef14fe</td></tr>
+<td>web.automation.tests.WishListTests@77102b91</td></tr>
 </table><p>
 </body>
 </html>
