@@ -7,46 +7,23 @@
   <test thread-count="1" parallel="tests" name="ChromeTest(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="web.automation.tests.WishListTests">
-        <methods>
-          <include name="quitDriver"/>
-          <include name="initiateDriver"/>
-<<<<<<< HEAD
-          <include name="verifyAddingAProductToWishListPageFromTheSearchResultsPage"/>
-          <include name="verifyNavigatingToMyWishListPageUsingTheWishListHeaderOption"/>
-=======
-          <include name="VerifyAddingTheProductToWishListFromTheProductsDisplayedInTheCategoryOrSubCategoryPage"/>
->>>>>>> bf620bc4214df0b9eacfffd72db7eae19ed3bf03
-        </methods>
-      </class> <!-- web.automation.tests.WishListTests -->
-    </classes>
-  </test> <!-- ChromeTest(failed) -->
-<<<<<<< HEAD
-  <test thread-count="1" parallel="tests" name="EdgeTest(failed)">
-    <parameter name="browser" value="edge"/>
-    <classes>
-=======
-  <test thread-count="2" parallel="tests" name="EdgeTest(failed)">
-    <parameter name="browser" value="edge"/>
-    <classes>
       <class name="web.automation.tests.AddToCartTests">
         <methods>
           <include name="quitDriver"/>
           <include name="initiateDriver"/>
-          <include name="verifyAddingTheProductToCartFromProductComparisonPage"/>
+          <include name="verifyAddingTheProductToCartFromWishListPage"/>
         </methods>
       </class> <!-- web.automation.tests.AddToCartTests -->
->>>>>>> bf620bc4214df0b9eacfffd72db7eae19ed3bf03
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="1" parallel="tests" name="EdgeTest(failed)">
+    <parameter name="browser" value="edge"/>
+    <classes>
       <class name="web.automation.tests.WishListTests">
         <methods>
           <include name="quitDriver"/>
           <include name="initiateDriver"/>
-          <include name="verifyAddingAProductToWishListPageFromTheSearchResultsPage"/>
-<<<<<<< HEAD
-          <include name="verifyNavigatingToMyWishListPageFromTheFooteroptions"/>
           <include name="verifyNavigatingToMyWishListPageUsingTheWishListHeaderOption"/>
-=======
->>>>>>> bf620bc4214df0b9eacfffd72db7eae19ed3bf03
         </methods>
       </class> <!-- web.automation.tests.WishListTests -->
     </classes>

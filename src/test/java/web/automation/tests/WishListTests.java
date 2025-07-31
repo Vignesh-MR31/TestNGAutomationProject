@@ -1,5 +1,9 @@
 package web.automation.tests;
 
+import java.util.LinkedList;
+import java.util.List;
+
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -19,6 +23,13 @@ public class WishListTests extends Base{
 	String firstFeaturedProduct;
 	String firstProduct;
 	String firstSearchedProduct;
+	String firstProductNameInWishList;
+	String firstAddedProduct = "MacBook";
+	String secondAddedProduct = "iMac";
+	String thirdAddedProduct = "Apple Cinema 30";
+	List<String> multipleProducts = new LinkedList<String>();
+	List<String> addedProducts = new LinkedList<String>();
+	boolean productNameStatus = false;
 	
 	@Test(priority=1,testName="TC_WL_001",enabled=true,groups = "WishListPage")
 	public void verifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheRelatedProductsSectionOfProductDisplayPage() throws InterruptedException {
@@ -83,6 +94,7 @@ public class WishListTests extends Base{
 		addToCartPage = new AddToCartPage(DriverManager.getDriver());
 		CommonHelperMethods.moveToElement(addToCartPage.desktopsDropdownWebElement(), DriverManager.getDriver());
 		addToCartPage.desktopsDropdownWebElement().click();
+		CommonHelperMethods.moveToElement(addToCartPage.showAllDesktopsWebElement(), DriverManager.getDriver());
 		addToCartPage.showAllDesktopsWebElement().click();
 		addToCartPage.macOptionWebElement().click();
 		firstProduct = addToCartPage.firstProductHeaderWebElement().getText();
@@ -143,6 +155,7 @@ public class WishListTests extends Base{
 		addToCartPage.searchIconButtonWebElement().click();
 		wishListPage = new WishListPage(DriverManager.getDriver());
 		firstSearchedProduct = wishListPage.firstSearchedProductHeaderWebElement().getText();
+		Thread.sleep(2000);
 		CommonHelperMethods.scrollIntoView(wishListPage.wishListButtonInSearchedProductsWebElement(), DriverManager.getDriver());
 		CommonHelperMethods.moveToElement(wishListPage.wishListButtonInSearchedProductsWebElement(), DriverManager.getDriver());
 		Thread.sleep(2000);
@@ -242,5 +255,156 @@ public class WishListTests extends Base{
 		Assert.assertEquals(wishListPage.productNameInWishListPageWebElement().getText(), firstSearchedProduct);
 		CommonHelperMethods.moveToElement(wishListPage.removeButtonInWishListWebElement(), DriverManager.getDriver());
 		wishListPage.removeButtonInWishListWebElement().click();
+	}
+	
+	@Test(priority=9,testName="TC_WL_009",enabled=true,groups = "WishListPage")
+	public void verifyTheMyWishListPageWhenThereAreNoProductsAdded() {
+		loginPage = new LoginPage(DriverManager.getDriver());
+		loginPage.myAccountElement().click();
+		loginPage.loginOptionElement().click();
+		loginPage.emailAddressElement().sendKeys("Vickymr@gmail.com");
+		loginPage.passwordElement().sendKeys("123456789");
+		loginPage.loginButtonElement().click();
+		addToCartPage = new AddToCartPage(DriverManager.getDriver());
+		addToCartPage.wishListHeaderWebElement().click();
+		wishListPage = new WishListPage(DriverManager.getDriver());
+		Assert.assertEquals(wishListPage.wishListEmptyMessageWebElement().getText(), "Your wish list is empty.");
+	}
+	
+	@Test(priority=10,testName="TC_WL_010",enabled=true,groups = "WishListPage")
+	public void verifyTheMyWishListPageWhenOnlyOneProductIsAddedToIt() throws InterruptedException {
+		loginPage = new LoginPage(DriverManager.getDriver());
+		loginPage.myAccountElement().click();
+		loginPage.loginOptionElement().click();
+		loginPage.emailAddressElement().sendKeys("Vickymr@gmail.com");
+		loginPage.passwordElement().sendKeys("123456789");
+		loginPage.loginButtonElement().click();
+		addToCartPage = new AddToCartPage(DriverManager.getDriver());
+		try {
+			addToCartPage.searchInputTextboxWebElement().sendKeys("iMac");
+		} catch (Exception e) {
+			addToCartPage.searchInputTextboxWebElement().sendKeys("iMac");
+		}
+		addToCartPage.searchIconButtonWebElement().click();
+		wishListPage = new WishListPage(DriverManager.getDriver());
+		CommonHelperMethods.scrollIntoView(wishListPage.wishListButtonInSearchedProductsWebElement(), DriverManager.getDriver());
+		CommonHelperMethods.moveToElement(wishListPage.wishListButtonInSearchedProductsWebElement(), DriverManager.getDriver());
+		Thread.sleep(2000);
+		wishListPage.wishListButtonInSearchedProductsWebElement().click();
+		Thread.sleep(2000);
+		wishListPage.wishListLinkWebElement().click();
+		wishListPage.continueButtonInWishListWebElement().click();
+		Assert.assertEquals(loginPage.myAccountHeaderElement().getText(), "My Account");
+		addToCartPage.wishListHeaderWebElement().click();
+		CommonHelperMethods.moveToElement(wishListPage.removeButtonInWishListWebElement(), DriverManager.getDriver());
+		wishListPage.removeButtonInWishListWebElement().click();
+	}
+	
+	@Test(priority=11,testName="TC_WL_011",enabled=true,groups = "WishListPage")
+	public void verifyTheRemovingTheProductFromMyWishListPage() throws InterruptedException {
+		loginPage = new LoginPage(DriverManager.getDriver());
+		loginPage.myAccountElement().click();
+		loginPage.loginOptionElement().click();
+		loginPage.emailAddressElement().sendKeys("Vickymr@gmail.com");
+		loginPage.passwordElement().sendKeys("123456789");
+		loginPage.loginButtonElement().click();
+		addToCartPage = new AddToCartPage(DriverManager.getDriver());
+		try {
+			addToCartPage.searchInputTextboxWebElement().sendKeys("iMac");
+		} catch (Exception e) {
+			addToCartPage.searchInputTextboxWebElement().sendKeys("iMac");
+		}
+		addToCartPage.searchIconButtonWebElement().click();
+		wishListPage = new WishListPage(DriverManager.getDriver());
+		CommonHelperMethods.scrollIntoView(wishListPage.wishListButtonInSearchedProductsWebElement(), DriverManager.getDriver());
+		CommonHelperMethods.moveToElement(wishListPage.wishListButtonInSearchedProductsWebElement(), DriverManager.getDriver());
+		Thread.sleep(2000);
+		wishListPage.wishListButtonInSearchedProductsWebElement().click();
+		Thread.sleep(2000);
+		wishListPage.wishListLinkWebElement().click();
+		CommonHelperMethods.moveToElement(wishListPage.removeButtonInWishListWebElement(), DriverManager.getDriver());
+		wishListPage.removeButtonInWishListWebElement().click();
+		Assert.assertEquals(wishListPage.successMessageAfterRemoveWebElement().getText().replace('×', ' ').trim(), "Success: You have modified your wish list!");
+	}
+	
+	@Test(priority=12,testName="TC_WL_012",enabled=true,groups = "WishListPage")
+	public void verifyAddingTheProductToCartFromTheMyWishListPage() throws InterruptedException {
+		loginPage = new LoginPage(DriverManager.getDriver());
+		loginPage.myAccountElement().click();
+		loginPage.loginOptionElement().click();
+		loginPage.emailAddressElement().sendKeys("Vickymr@gmail.com");
+		loginPage.passwordElement().sendKeys("123456789");
+		loginPage.loginButtonElement().click();
+		addToCartPage = new AddToCartPage(DriverManager.getDriver());
+		try {
+			addToCartPage.searchInputTextboxWebElement().sendKeys("iMac");
+		} catch (Exception e) {
+			addToCartPage.searchInputTextboxWebElement().sendKeys("iMac");
+		}
+		addToCartPage.searchIconButtonWebElement().click();
+		wishListPage = new WishListPage(DriverManager.getDriver());
+		CommonHelperMethods.scrollIntoView(wishListPage.wishListButtonInSearchedProductsWebElement(), DriverManager.getDriver());
+		CommonHelperMethods.moveToElement(wishListPage.wishListButtonInSearchedProductsWebElement(), DriverManager.getDriver());
+		Thread.sleep(2000);
+		wishListPage.wishListButtonInSearchedProductsWebElement().click();
+		Thread.sleep(2000);
+		wishListPage.wishListLinkWebElement().click();
+		firstProductNameInWishList = wishListPage.productNameInWishListPageWebElement().getText();
+		addToCartPage.addToCartInWishListWebElement().click();
+		Assert.assertEquals(wishListPage.successMessageAfterRemoveWebElement().getText().replace('×', ' ').trim(), "Success: You have added "+firstProductNameInWishList +" to your shopping cart!");
+		CommonHelperMethods.moveToElement(wishListPage.removeButtonInWishListWebElement(), DriverManager.getDriver());
+		wishListPage.removeButtonInWishListWebElement().click();
+	}
+	
+	@Test(priority=13,testName="TC_WL_013",enabled=true,groups = "WishListPage")
+	public void verifyAddingTheMultipleProductsToTheMyWishListPage() throws InterruptedException {
+		loginPage = new LoginPage(DriverManager.getDriver());
+		loginPage.myAccountElement().click();
+		loginPage.loginOptionElement().click();
+		loginPage.emailAddressElement().sendKeys("Vickymr@gmail.com");
+		loginPage.passwordElement().sendKeys("123456789");
+		loginPage.loginButtonElement().click();
+		addToCartPage = new AddToCartPage(DriverManager.getDriver());
+		multipleProducts.add(firstAddedProduct);
+		multipleProducts.add(secondAddedProduct);
+		multipleProducts.add(thirdAddedProduct);
+		for(String products:multipleProducts) {
+			try {
+				addToCartPage.searchInputTextboxWebElement().sendKeys(products);
+			} catch (Exception e) {
+				addToCartPage.searchInputTextboxWebElement().sendKeys(products);
+			}
+			addToCartPage.searchIconButtonWebElement().click();
+			wishListPage = new WishListPage(DriverManager.getDriver());
+			addedProducts.add(wishListPage.firstSearchedProductHeaderWebElement().getText());
+			CommonHelperMethods.scrollIntoView(wishListPage.wishListButtonInSearchedProductsWebElement(), DriverManager.getDriver());
+			CommonHelperMethods.moveToElement(wishListPage.wishListButtonInSearchedProductsWebElement(), DriverManager.getDriver());
+			Thread.sleep(2000);
+			wishListPage.wishListButtonInSearchedProductsWebElement().click();
+			addToCartPage.searchInputTextboxWebElement().clear();
+		}
+		wishListPage.wishListLinkWebElement().click();
+		List<WebElement> productNames = wishListPage.productNamesInWishListPageWebElement();
+		for(WebElement names:productNames) {
+			int count = 0;
+			while(count<multipleProducts.size()) {
+				if(names.getText().equalsIgnoreCase(addedProducts.get(count))) {
+					productNameStatus = true;
+					break;
+				}
+				else {
+					productNameStatus = false;
+				}
+				count++;
+			}
+		}
+		Assert.assertTrue(productNameStatus);
+		List<WebElement> removeButtons = wishListPage.removeButtonsInWishListWebElement();
+		int removeButtonsCount = removeButtons.size();
+		while(removeButtonsCount>0) {
+			CommonHelperMethods.moveToElement(wishListPage.removeButtonInWishListWebElement(), DriverManager.getDriver());
+			wishListPage.removeButtonInWishListWebElement().click();
+			removeButtonsCount--;
+		}
 	}
 }

@@ -1,5 +1,7 @@
 package web.automation.pages;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -61,6 +63,21 @@ public class WishListPage {
 	
 	@FindBy(linkText = "(//a[text()='My Account'])[2]")
 	WebElement myAccountFooter;
+	
+	@FindBy(xpath = "//div[@id='content']//p")
+	WebElement wishListEmptyMessage;
+	
+	@FindBy(linkText = "Continue")
+	WebElement continueButtonInWishList;
+	
+	@FindBy(xpath = "//div[@id='account-wishlist']//div[contains(@class,'alert')]")
+	WebElement successMessageAfterRemove;
+	
+	@FindBy(xpath = "//div[@id='content']//tbody//td[2]")
+	List<WebElement> productNamesInWishListPage;
+	
+	@FindBy(xpath = "//a[@data-original-title='Remove']")
+	List<WebElement> removeButtonsInWishList;
 	
 	public WebElement wishListButtonInRelatedProductsWebElement() {
 		return wishListButtonInRelatedProducts;
@@ -128,6 +145,26 @@ public class WishListPage {
 	
 	public WebElement myAccountFooterWebElement() {
 		return myAccountFooter;
+	}
+	
+	public WebElement wishListEmptyMessageWebElement() {
+		return wishListEmptyMessage;
+	}
+	
+	public WebElement continueButtonInWishListWebElement() {
+		return continueButtonInWishList;
+	}
+	
+	public WebElement successMessageAfterRemoveWebElement() {
+		return successMessageAfterRemove;
+	}
+	
+	public List<WebElement> productNamesInWishListPageWebElement() {
+		return productNamesInWishListPage;
+	}
+	
+	public List<WebElement> removeButtonsInWishListWebElement() {
+		return removeButtonsInWishList;
 	}
 	
 }

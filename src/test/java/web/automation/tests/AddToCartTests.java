@@ -49,9 +49,10 @@ public class AddToCartTests extends Base{
 		firstProduct = addToCartPage.firstProductHeaderWebElement().getText();
 		addToCartPage.firstProductImageWebElement().click();
 		Thread.sleep(2000);
+		//CommonHelperMethods.scrollIntoView(addToCartPage.addToWishListButtonWebElement(), DriverManager.getDriver());
 		CommonHelperMethods.moveToElement(addToCartPage.addToWishListButtonWebElement(), DriverManager.getDriver());
-		CommonHelperMethods.jsClick(addToCartPage.addToWishListButtonWebElement(), DriverManager.getDriver());
-		//addToCartPage.addToWishListButtonWebElement().click();
+		Thread.sleep(2000);
+		addToCartPage.addToWishListButtonWebElement().click();
 		addToCartPage.wishListHeaderWebElement().click();
 		addToCartPage.addToCartInWishListWebElement().click();
 		addToCartPage.shoppingCartHeaderWebElement().click();

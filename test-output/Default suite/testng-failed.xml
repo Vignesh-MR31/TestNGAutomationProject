@@ -7,7 +7,7 @@
         <methods>
           <include name="quitDriver"/>
           <include name="initiateDriver"/>
-          <include name="verifyNavigatingToMyWishListPageFromTheMyAccountPage"/>
+          <include name="verifyNavigatingToMyWishListPageUsingTheWishListHeaderOption"/>
         </methods>
       </class> <!-- web.automation.tests.WishListTests -->
     </classes>
