@@ -29,15 +29,20 @@ public class WishListTests extends Base{
 		loginPage.passwordElement().sendKeys("123456789");
 		loginPage.loginButtonElement().click();
 		addToCartPage = new AddToCartPage(DriverManager.getDriver());
-		addToCartPage.searchInputTextboxWebElement().sendKeys("iMac");
+		try {
+			addToCartPage.searchInputTextboxWebElement().sendKeys("iMac");
+		} catch (Exception e) {
+			addToCartPage.searchInputTextboxWebElement().sendKeys("iMac");
+		}
 		addToCartPage.searchIconButtonWebElement().click();
 		addToCartPage.firstProductImageWebElement().click();
 		wishListPage = new WishListPage(DriverManager.getDriver());
 		firstRelatedProduct = wishListPage.firstRelatedProductHeaderWebElement().getText();
+		CommonHelperMethods.scrollIntoView(wishListPage.wishListButtonInRelatedProductsWebElement(), DriverManager.getDriver());
+		CommonHelperMethods.moveToElement(wishListPage.wishListButtonInRelatedProductsWebElement(), DriverManager.getDriver());
 		Thread.sleep(2000);
 		wishListPage.wishListButtonInRelatedProductsWebElement().click();
 		CommonHelperMethods.scrollIntoView(wishListPage.wishListLinkWebElement(), DriverManager.getDriver());
-		CommonHelperMethods.visibilityOfElement(wishListPage.wishListLinkWebElement(), DriverManager.getDriver());
 		Thread.sleep(2000);
 		wishListPage.wishListLinkWebElement().click();
 		Assert.assertEquals(wishListPage.productNameInWishListPageWebElement().getText(), firstRelatedProduct);
@@ -56,8 +61,9 @@ public class WishListTests extends Base{
 		wishListPage = new WishListPage(DriverManager.getDriver());
 		CommonHelperMethods.handlingStaleElementException(wishListPage.logoWebElement());
 		firstFeaturedProduct = wishListPage.firstFeaturedProductHeaderWebElement().getText();
-		Thread.sleep(2000);
 		CommonHelperMethods.scrollIntoView(wishListPage.wishListButtonInFeaturedProductsWebElement(), DriverManager.getDriver());
+		CommonHelperMethods.moveToElement(wishListPage.wishListButtonInFeaturedProductsWebElement(), DriverManager.getDriver());
+		Thread.sleep(2000);;
 		wishListPage.wishListButtonInFeaturedProductsWebElement().click();
 		Thread.sleep(2000);
 		wishListPage.wishListLinkWebElement().click();
@@ -75,11 +81,14 @@ public class WishListTests extends Base{
 		loginPage.passwordElement().sendKeys("123456789");
 		loginPage.loginButtonElement().click();
 		addToCartPage = new AddToCartPage(DriverManager.getDriver());
+		CommonHelperMethods.moveToElement(addToCartPage.desktopsDropdownWebElement(), DriverManager.getDriver());
 		addToCartPage.desktopsDropdownWebElement().click();
 		addToCartPage.showAllDesktopsWebElement().click();
 		addToCartPage.macOptionWebElement().click();
 		firstProduct = addToCartPage.firstProductHeaderWebElement().getText();
 		wishListPage = new WishListPage(DriverManager.getDriver());
+		CommonHelperMethods.scrollIntoView(wishListPage.wishListButtonInCategoryProductsWebElement(), DriverManager.getDriver());
+		CommonHelperMethods.moveToElement(wishListPage.wishListButtonInCategoryProductsWebElement(), DriverManager.getDriver());
 		Thread.sleep(2000);
 		wishListPage.wishListButtonInCategoryProductsWebElement().click();
 		Thread.sleep(2000);
@@ -98,12 +107,18 @@ public class WishListTests extends Base{
 		loginPage.passwordElement().sendKeys("123456789");
 		loginPage.loginButtonElement().click();
 		addToCartPage = new AddToCartPage(DriverManager.getDriver());
-		addToCartPage.searchInputTextboxWebElement().sendKeys("iMac");
+		try {
+			addToCartPage.searchInputTextboxWebElement().sendKeys("iMac");
+		} catch (Exception e) {
+			addToCartPage.searchInputTextboxWebElement().sendKeys("iMac");
+		}
 		addToCartPage.searchIconButtonWebElement().click();
 		wishListPage = new WishListPage(DriverManager.getDriver());
 		firstSearchedProduct = wishListPage.firstSearchedProductHeaderWebElement().getText();
+		CommonHelperMethods.scrollIntoView(wishListPage.wishListButtonInSearchedProductsWebElement(), DriverManager.getDriver());
+		CommonHelperMethods.moveToElement(wishListPage.wishListButtonInSearchedProductsWebElement(), DriverManager.getDriver());
 		Thread.sleep(2000);
-		wishListPage.wishListButtonInCategoryProductsWebElement().click();
+		wishListPage.wishListButtonInSearchedProductsWebElement().click();
 		Thread.sleep(2000);
 		wishListPage.wishListLinkWebElement().click();
 		Assert.assertEquals(wishListPage.productNameInWishListPageWebElement().getText(), firstSearchedProduct);
@@ -120,12 +135,18 @@ public class WishListTests extends Base{
 		loginPage.passwordElement().sendKeys("123456789");
 		loginPage.loginButtonElement().click();
 		addToCartPage = new AddToCartPage(DriverManager.getDriver());
-		addToCartPage.searchInputTextboxWebElement().sendKeys("iMac");
+		try {
+			addToCartPage.searchInputTextboxWebElement().sendKeys("iMac");
+		} catch (Exception e) {
+			addToCartPage.searchInputTextboxWebElement().sendKeys("iMac");
+		}
 		addToCartPage.searchIconButtonWebElement().click();
 		wishListPage = new WishListPage(DriverManager.getDriver());
 		firstSearchedProduct = wishListPage.firstSearchedProductHeaderWebElement().getText();
+		CommonHelperMethods.scrollIntoView(wishListPage.wishListButtonInSearchedProductsWebElement(), DriverManager.getDriver());
+		CommonHelperMethods.moveToElement(wishListPage.wishListButtonInSearchedProductsWebElement(), DriverManager.getDriver());
 		Thread.sleep(2000);
-		wishListPage.wishListButtonInCategoryProductsWebElement().click();
+		wishListPage.wishListButtonInSearchedProductsWebElement().click();
 		addToCartPage.wishListHeaderWebElement().click();
 		Assert.assertEquals(wishListPage.productNameInWishListPageWebElement().getText(), firstSearchedProduct);
 		CommonHelperMethods.moveToElement(wishListPage.removeButtonInWishListWebElement(), DriverManager.getDriver());
@@ -141,7 +162,11 @@ public class WishListTests extends Base{
 		loginPage.passwordElement().sendKeys("123456789");
 		loginPage.loginButtonElement().click();
 		addToCartPage = new AddToCartPage(DriverManager.getDriver());
-		addToCartPage.searchInputTextboxWebElement().sendKeys("iMac");
+		try {
+			addToCartPage.searchInputTextboxWebElement().sendKeys("iMac");
+		} catch (Exception e) {
+			addToCartPage.searchInputTextboxWebElement().sendKeys("iMac");
+		}
 		addToCartPage.searchIconButtonWebElement().click();
 		wishListPage = new WishListPage(DriverManager.getDriver());
 		firstSearchedProduct = wishListPage.firstSearchedProductHeaderWebElement().getText();
@@ -171,7 +196,11 @@ public class WishListTests extends Base{
 		loginPage.passwordElement().sendKeys("123456789");
 		loginPage.loginButtonElement().click();
 		addToCartPage = new AddToCartPage(DriverManager.getDriver());
-		addToCartPage.searchInputTextboxWebElement().sendKeys("iMac");
+		try {
+			addToCartPage.searchInputTextboxWebElement().sendKeys("iMac");
+		} catch (Exception e) {
+			addToCartPage.searchInputTextboxWebElement().sendKeys("iMac");
+		}
 		addToCartPage.searchIconButtonWebElement().click();
 		wishListPage = new WishListPage(DriverManager.getDriver());
 		firstSearchedProduct = wishListPage.firstSearchedProductHeaderWebElement().getText();
@@ -203,8 +232,12 @@ public class WishListTests extends Base{
 		addToCartPage.searchIconButtonWebElement().click();
 		wishListPage = new WishListPage(DriverManager.getDriver());
 		firstSearchedProduct = wishListPage.firstSearchedProductHeaderWebElement().getText();
+		CommonHelperMethods.scrollIntoView(wishListPage.wishListButtonInSearchedProductsWebElement(), DriverManager.getDriver());
+		CommonHelperMethods.moveToElement(wishListPage.wishListButtonInSearchedProductsWebElement(), DriverManager.getDriver());
 		Thread.sleep(2000);
-		wishListPage.wishListButtonInCategoryProductsWebElement().click();
+		wishListPage.wishListButtonInSearchedProductsWebElement().click();
+		Thread.sleep(2000);
+		CommonHelperMethods.moveToElement(wishListPage.wishListFooterWebElement(), DriverManager.getDriver());
 		wishListPage.wishListFooterWebElement().click();
 		Assert.assertEquals(wishListPage.productNameInWishListPageWebElement().getText(), firstSearchedProduct);
 		CommonHelperMethods.moveToElement(wishListPage.removeButtonInWishListWebElement(), DriverManager.getDriver());

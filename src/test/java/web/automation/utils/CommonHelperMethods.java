@@ -42,6 +42,11 @@ public class CommonHelperMethods extends Base{
 	
 	public static void moveToElement(WebElement element,WebDriver driver) {
 		actions = new Actions(driver);
-		actions.moveToElement(element);
+		actions.moveToElement(element).build().perform();
+	}
+	
+	public static void jsClick(WebElement element,WebDriver driver) {
+	    js = (JavascriptExecutor) driver;
+	    js.executeScript("arguments[0].click();", element);
 	}
 }
