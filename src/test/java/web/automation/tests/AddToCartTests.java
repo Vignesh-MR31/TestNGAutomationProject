@@ -32,7 +32,7 @@ public class AddToCartTests extends Base{
 	}
 	
 	@Test(priority=2,testName="TC_ATC_002",enabled=true,groups = "AddToCartPage")
-	public void verifyAddingTheProductToCartFromWishListPage() {
+	public void verifyAddingTheProductToCartFromWishListPage() throws InterruptedException {
 		loginPage = new LoginPage(DriverManager.getDriver());
 		loginPage.myAccountElement().click();
 		loginPage.loginOptionElement().click();
@@ -48,7 +48,10 @@ public class AddToCartTests extends Base{
 		addToCartPage.searchIconButtonWebElement().click();
 		firstProduct = addToCartPage.firstProductHeaderWebElement().getText();
 		addToCartPage.firstProductImageWebElement().click();
-		addToCartPage.addToWishListButtonWebElement().click();
+		Thread.sleep(2000);
+		CommonHelperMethods.moveToElement(addToCartPage.addToWishListButtonWebElement(), DriverManager.getDriver());
+		CommonHelperMethods.jsClick(addToCartPage.addToWishListButtonWebElement(), DriverManager.getDriver());
+		//addToCartPage.addToWishListButtonWebElement().click();
 		addToCartPage.wishListHeaderWebElement().click();
 		addToCartPage.addToCartInWishListWebElement().click();
 		addToCartPage.shoppingCartHeaderWebElement().click();

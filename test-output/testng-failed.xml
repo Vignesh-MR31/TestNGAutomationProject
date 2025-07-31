@@ -11,10 +11,28 @@
         <methods>
           <include name="quitDriver"/>
           <include name="initiateDriver"/>
-          <include name="VerifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheFeaturedSectionOfHomePage"/>
-          <include name="verifyNavigatingToMyWishListPageUsingTheWishListHeaderOption"/>
+          <include name="VerifyAddingTheProductToWishListFromTheProductsDisplayedInTheCategoryOrSubCategoryPage"/>
         </methods>
       </class> <!-- web.automation.tests.WishListTests -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
+  <test thread-count="2" parallel="tests" name="EdgeTest(failed)">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="web.automation.tests.AddToCartTests">
+        <methods>
+          <include name="quitDriver"/>
+          <include name="initiateDriver"/>
+          <include name="verifyAddingTheProductToCartFromProductComparisonPage"/>
+        </methods>
+      </class> <!-- web.automation.tests.AddToCartTests -->
+      <class name="web.automation.tests.WishListTests">
+        <methods>
+          <include name="quitDriver"/>
+          <include name="initiateDriver"/>
+          <include name="verifyAddingAProductToWishListPageFromTheSearchResultsPage"/>
+        </methods>
+      </class> <!-- web.automation.tests.WishListTests -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
