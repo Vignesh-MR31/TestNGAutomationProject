@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>17/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jul 31 18:29:36 IST 2025</td>
+<td>Started on:</td><td>Sat Aug 09 19:31:36 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>165 seconds (165450 ms)</td>
+<tr><td>Total time:</td><td>162 seconds (162258 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,16 +76,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='web.automation.tests.WishListTests.verifyNavigatingToMyWishListPageUsingTheWishListHeaderOption()'><b>verifyNavigatingToMyWishListPageUsingTheWishListHeaderOption</b><br>Test class: web.automation.tests.WishListTests</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;content&apos;]//tbody//td[2]&quot;}
-  (Session info: MicrosoftEdge=138.0.3351.109)
+<td title='web.automation.tests.AddToCartTests.verifyAddingTheProductToCartFromWishListPage()'><b>verifyAddingTheProductToCartFromWishListPage</b><br>Test class: web.automation.tests.AddToCartTests</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@data-original-title=&apos;Add to Cart&apos;]&quot;}
+  (Session info: MicrosoftEdge=138.0.3351.121)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [a21f9001ece9a206194446c00740b62f, findElement {value=//div[@id=&apos;content&apos;]//tbody//td[2], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.109, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52980}, msedge: {msedgedriverVersion: 138.0.3351.83 (16e2a7bef320..., userDataDir: C:\Users\VICKY\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52980/devtoo..., se:cdpVersion: 138.0.3351.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a21f9001ece9a206194446c00740b62f
+Command: [152c0602d12195fd35dbfea965f579ef, findElement {using=xpath, value=//button[@data-original-title=&apos;Add to Cart&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.121, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:57764}, msedge: {msedgedriverVersion: 138.0.3351.83 (16e2a7bef320..., userDataDir: C:\Users\VICKY\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57764/devtoo..., se:cdpVersion: 138.0.3351.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 152c0602d12195fd35dbfea965f579ef
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -99,23 +99,23 @@ Session ID: a21f9001ece9a206194446c00740b62f
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
-	at web.automation.tests.WishListTests.verifyNavigatingToMyWishListPageUsingTheWishListHeaderOption(WishListTests.java:164)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+	at web.automation.tests.AddToCartTests.verifyAddingTheProductToCartFromWishListPage(AddToCartTests.java:57)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace462474388", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace462474388'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;content&apos;]//tbody//td[2]&quot;}
-  (Session info: MicrosoftEdge=138.0.3351.109)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1374533366", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1374533366'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@data-original-title=&apos;Add to Cart&apos;]&quot;}
+  (Session info: MicrosoftEdge=138.0.3351.121)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [a21f9001ece9a206194446c00740b62f, findElement {value=//div[@id=&apos;content&apos;]//tbody//td[2], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.109, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52980}, msedge: {msedgedriverVersion: 138.0.3351.83 (16e2a7bef320..., userDataDir: C:\Users\VICKY\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52980/devtoo..., se:cdpVersion: 138.0.3351.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a21f9001ece9a206194446c00740b62f
+Command: [152c0602d12195fd35dbfea965f579ef, findElement {using=xpath, value=//button[@data-original-title=&apos;Add to Cart&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.121, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:57764}, msedge: {msedgedriverVersion: 138.0.3351.83 (16e2a7bef320..., userDataDir: C:\Users\VICKY\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57764/devtoo..., se:cdpVersion: 138.0.3351.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 152c0602d12195fd35dbfea965f579ef
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -132,8 +132,8 @@ Session ID: a21f9001ece9a206194446c00740b62f
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
-	at web.automation.tests.WishListTests.verifyNavigatingToMyWishListPageUsingTheWishListHeaderOption(WishListTests.java:164)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+	at web.automation.tests.AddToCartTests.verifyAddingTheProductToCartFromWishListPage(AddToCartTests.java:57)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -155,8 +155,8 @@ Session ID: a21f9001ece9a206194446c00740b62f
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 </pre></div></td>
-<td>11</td>
-<td>web.automation.tests.WishListTests@8ad6665</td></tr>
+<td>12</td>
+<td>web.automation.tests.AddToCartTests@2631f68c</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -167,90 +167,90 @@ Session ID: a21f9001ece9a206194446c00740b62f
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='web.automation.tests.LoginPageTests.loginUserWithValidCredentials()'><b>loginUserWithValidCredentials</b><br>Test class: web.automation.tests.LoginPageTests</td>
+<td></td>
+<td>1</td>
+<td>web.automation.tests.LoginPageTests@6bca7e0d</td></tr>
+<tr>
 <td title='web.automation.tests.WishListTests.verifyAddingTheProductToCartFromTheMyWishListPage()'><b>verifyAddingTheProductToCartFromTheMyWishListPage</b><br>Test class: web.automation.tests.WishListTests</td>
 <td></td>
 <td>7</td>
-<td>web.automation.tests.WishListTests@8ad6665</td></tr>
+<td>web.automation.tests.WishListTests@6ed3f258</td></tr>
 <tr>
-<td title='web.automation.tests.AddToCartTests.verifyAddingTheProductToCartFromTheProductsDisplayedInTheCategoryOrSubcategoryPage()'><b>verifyAddingTheProductToCartFromTheProductsDisplayedInTheCategoryOrSubcategoryPage</b><br>Test class: web.automation.tests.AddToCartTests</td>
+<td title='web.automation.tests.WishListTests.verifyNavigatingToMyWishListPageFromTheFooteroptions()'><b>verifyNavigatingToMyWishListPageFromTheFooteroptions</b><br>Test class: web.automation.tests.WishListTests</td>
 <td></td>
-<td>1</td>
-<td>web.automation.tests.AddToCartTests@6ed3f258</td></tr>
+<td>7</td>
+<td>web.automation.tests.WishListTests@6ed3f258</td></tr>
 <tr>
-<td title='web.automation.tests.AddToCartTests.verifyAddingTheProductToCartFromProductDisplayPage()'><b>verifyAddingTheProductToCartFromProductDisplayPage</b><br>Test class: web.automation.tests.AddToCartTests</td>
+<td title='web.automation.tests.WishListTests.verifyAddingTheMultipleProductsToTheMyWishListPage()'><b>verifyAddingTheMultipleProductsToTheMyWishListPage</b><br>Test class: web.automation.tests.WishListTests</td>
 <td></td>
-<td>1</td>
-<td>web.automation.tests.AddToCartTests@6ed3f258</td></tr>
-<tr>
-<td title='web.automation.tests.WishListTests.verifyTheMyWishListPageWhenOnlyOneProductIsAddedToIt()'><b>verifyTheMyWishListPageWhenOnlyOneProductIsAddedToIt</b><br>Test class: web.automation.tests.WishListTests</td>
-<td></td>
-<td>8</td>
-<td>web.automation.tests.WishListTests@8ad6665</td></tr>
-<tr>
-<td title='web.automation.tests.AddToCartTests.verifyAddingTheProductToCartFromWishListPage()'><b>verifyAddingTheProductToCartFromWishListPage</b><br>Test class: web.automation.tests.AddToCartTests</td>
-<td></td>
-<td>13</td>
-<td>web.automation.tests.AddToCartTests@6ed3f258</td></tr>
+<td>14</td>
+<td>web.automation.tests.WishListTests@6ed3f258</td></tr>
 <tr>
 <td title='web.automation.tests.WishListTests.verifyTheMyWishListPageWhenThereAreNoProductsAdded()'><b>verifyTheMyWishListPageWhenThereAreNoProductsAdded</b><br>Test class: web.automation.tests.WishListTests</td>
 <td></td>
 <td>2</td>
-<td>web.automation.tests.WishListTests@8ad6665</td></tr>
-<tr>
-<td title='web.automation.tests.AddToCartTests.verifyAddingTheProductToCartFromSearchResultsPage()'><b>verifyAddingTheProductToCartFromSearchResultsPage</b><br>Test class: web.automation.tests.AddToCartTests</td>
-<td></td>
-<td>3</td>
-<td>web.automation.tests.AddToCartTests@6ed3f258</td></tr>
+<td>web.automation.tests.WishListTests@6ed3f258</td></tr>
 <tr>
 <td title='web.automation.tests.AddToCartTests.verifyAddingTheProductToCartFromProductComparisonPage()'><b>verifyAddingTheProductToCartFromProductComparisonPage</b><br>Test class: web.automation.tests.AddToCartTests</td>
 <td></td>
 <td>1</td>
-<td>web.automation.tests.AddToCartTests@6ed3f258</td></tr>
-<tr>
-<td title='web.automation.tests.WishListTests.VerifyAddingTheProductToWishListFromTheProductsDisplayedInTheCategoryOrSubCategoryPage()'><b>VerifyAddingTheProductToWishListFromTheProductsDisplayedInTheCategoryOrSubCategoryPage</b><br>Test class: web.automation.tests.WishListTests</td>
-<td></td>
-<td>11</td>
-<td>web.automation.tests.WishListTests@8ad6665</td></tr>
-<tr>
-<td title='web.automation.tests.AddToCartTests.verifyingTheProductToCartFromTheRelatedProductsSectionOfTheProductDisplayPage()'><b>verifyingTheProductToCartFromTheRelatedProductsSectionOfTheProductDisplayPage</b><br>Test class: web.automation.tests.AddToCartTests</td>
-<td></td>
-<td>1</td>
-<td>web.automation.tests.AddToCartTests@6ed3f258</td></tr>
-<tr>
-<td title='web.automation.tests.LoginPageTests.loginUserWithValidCredentials()'><b>loginUserWithValidCredentials</b><br>Test class: web.automation.tests.LoginPageTests</td>
-<td></td>
-<td>1</td>
-<td>web.automation.tests.LoginPageTests@2631f68c</td></tr>
-<tr>
-<td title='web.automation.tests.WishListTests.verifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheRelatedProductsSectionOfProductDisplayPage()'><b>verifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheRelatedProductsSectionOfProductDisplayPage</b><br>Test class: web.automation.tests.WishListTests</td>
-<td></td>
-<td>8</td>
-<td>web.automation.tests.WishListTests@8ad6665</td></tr>
-<tr>
-<td title='web.automation.tests.WishListTests.verifyTheRemovingTheProductFromMyWishListPage()'><b>verifyTheRemovingTheProductFromMyWishListPage</b><br>Test class: web.automation.tests.WishListTests</td>
-<td></td>
-<td>7</td>
-<td>web.automation.tests.WishListTests@8ad6665</td></tr>
-<tr>
-<td title='web.automation.tests.WishListTests.VerifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheFeaturedSectionOfHomePage()'><b>VerifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheFeaturedSectionOfHomePage</b><br>Test class: web.automation.tests.WishListTests</td>
-<td></td>
-<td>10</td>
-<td>web.automation.tests.WishListTests@8ad6665</td></tr>
+<td>web.automation.tests.AddToCartTests@2631f68c</td></tr>
 <tr>
 <td title='web.automation.tests.WishListTests.verifyAddingAProductToWishListPageFromTheSearchResultsPage()'><b>verifyAddingAProductToWishListPageFromTheSearchResultsPage</b><br>Test class: web.automation.tests.WishListTests</td>
 <td></td>
 <td>7</td>
-<td>web.automation.tests.WishListTests@8ad6665</td></tr>
+<td>web.automation.tests.WishListTests@6ed3f258</td></tr>
 <tr>
-<td title='web.automation.tests.WishListTests.verifyNavigatingToMyWishListPageFromTheFooteroptions()'><b>verifyNavigatingToMyWishListPageFromTheFooteroptions</b><br>Test class: web.automation.tests.WishListTests</td>
+<td title='web.automation.tests.WishListTests.verifyTheMyWishListPageWhenOnlyOneProductIsAddedToIt()'><b>verifyTheMyWishListPageWhenOnlyOneProductIsAddedToIt</b><br>Test class: web.automation.tests.WishListTests</td>
 <td></td>
 <td>8</td>
-<td>web.automation.tests.WishListTests@8ad6665</td></tr>
+<td>web.automation.tests.WishListTests@6ed3f258</td></tr>
 <tr>
-<td title='web.automation.tests.WishListTests.verifyAddingTheMultipleProductsToTheMyWishListPage()'><b>verifyAddingTheMultipleProductsToTheMyWishListPage</b><br>Test class: web.automation.tests.WishListTests</td>
+<td title='web.automation.tests.WishListTests.VerifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheFeaturedSectionOfHomePage()'><b>VerifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheFeaturedSectionOfHomePage</b><br>Test class: web.automation.tests.WishListTests</td>
 <td></td>
-<td>13</td>
-<td>web.automation.tests.WishListTests@8ad6665</td></tr>
+<td>7</td>
+<td>web.automation.tests.WishListTests@6ed3f258</td></tr>
+<tr>
+<td title='web.automation.tests.AddToCartTests.verifyingTheProductToCartFromTheRelatedProductsSectionOfTheProductDisplayPage()'><b>verifyingTheProductToCartFromTheRelatedProductsSectionOfTheProductDisplayPage</b><br>Test class: web.automation.tests.AddToCartTests</td>
+<td></td>
+<td>1</td>
+<td>web.automation.tests.AddToCartTests@2631f68c</td></tr>
+<tr>
+<td title='web.automation.tests.AddToCartTests.verifyAddingTheProductToCartFromTheProductsDisplayedInTheCategoryOrSubcategoryPage()'><b>verifyAddingTheProductToCartFromTheProductsDisplayedInTheCategoryOrSubcategoryPage</b><br>Test class: web.automation.tests.AddToCartTests</td>
+<td></td>
+<td>1</td>
+<td>web.automation.tests.AddToCartTests@2631f68c</td></tr>
+<tr>
+<td title='web.automation.tests.AddToCartTests.verifyAddingTheProductToCartFromSearchResultsPage()'><b>verifyAddingTheProductToCartFromSearchResultsPage</b><br>Test class: web.automation.tests.AddToCartTests</td>
+<td></td>
+<td>3</td>
+<td>web.automation.tests.AddToCartTests@2631f68c</td></tr>
+<tr>
+<td title='web.automation.tests.WishListTests.VerifyAddingTheProductToWishListFromTheProductsDisplayedInTheCategoryOrSubCategoryPage()'><b>VerifyAddingTheProductToWishListFromTheProductsDisplayedInTheCategoryOrSubCategoryPage</b><br>Test class: web.automation.tests.WishListTests</td>
+<td></td>
+<td>8</td>
+<td>web.automation.tests.WishListTests@6ed3f258</td></tr>
+<tr>
+<td title='web.automation.tests.WishListTests.verifyNavigatingToMyWishListPageUsingTheWishListHeaderOption()'><b>verifyNavigatingToMyWishListPageUsingTheWishListHeaderOption</b><br>Test class: web.automation.tests.WishListTests</td>
+<td></td>
+<td>7</td>
+<td>web.automation.tests.WishListTests@6ed3f258</td></tr>
+<tr>
+<td title='web.automation.tests.WishListTests.verifyTheRemovingTheProductFromMyWishListPage()'><b>verifyTheRemovingTheProductFromMyWishListPage</b><br>Test class: web.automation.tests.WishListTests</td>
+<td></td>
+<td>7</td>
+<td>web.automation.tests.WishListTests@6ed3f258</td></tr>
+<tr>
+<td title='web.automation.tests.WishListTests.verifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheRelatedProductsSectionOfProductDisplayPage()'><b>verifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheRelatedProductsSectionOfProductDisplayPage</b><br>Test class: web.automation.tests.WishListTests</td>
+<td></td>
+<td>8</td>
+<td>web.automation.tests.WishListTests@6ed3f258</td></tr>
+<tr>
+<td title='web.automation.tests.AddToCartTests.verifyAddingTheProductToCartFromProductDisplayPage()'><b>verifyAddingTheProductToCartFromProductDisplayPage</b><br>Test class: web.automation.tests.AddToCartTests</td>
+<td></td>
+<td>1</td>
+<td>web.automation.tests.AddToCartTests@2631f68c</td></tr>
 </table><p>
 </body>
 </html>

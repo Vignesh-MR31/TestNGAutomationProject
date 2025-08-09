@@ -7,6 +7,18 @@
   <test thread-count="1" parallel="tests" name="ChromeTest(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
+      <class name="web.automation.tests.WishListTests">
+        <methods>
+          <include name="quitDriver"/>
+          <include name="initiateDriver"/>
+          <include name="verifyAddingAProductToWishListPageFromTheProductThatIsDisplayedInTheRelatedProductsSectionOfProductDisplayPage"/>
+        </methods>
+      </class> <!-- web.automation.tests.WishListTests -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="1" parallel="tests" name="EdgeTest(failed)">
+    <parameter name="browser" value="edge"/>
+    <classes>
       <class name="web.automation.tests.AddToCartTests">
         <methods>
           <include name="quitDriver"/>
@@ -14,18 +26,6 @@
           <include name="verifyAddingTheProductToCartFromWishListPage"/>
         </methods>
       </class> <!-- web.automation.tests.AddToCartTests -->
-    </classes>
-  </test> <!-- ChromeTest(failed) -->
-  <test thread-count="1" parallel="tests" name="EdgeTest(failed)">
-    <parameter name="browser" value="edge"/>
-    <classes>
-      <class name="web.automation.tests.WishListTests">
-        <methods>
-          <include name="quitDriver"/>
-          <include name="initiateDriver"/>
-          <include name="verifyNavigatingToMyWishListPageUsingTheWishListHeaderOption"/>
-        </methods>
-      </class> <!-- web.automation.tests.WishListTests -->
     </classes>
   </test> <!-- EdgeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

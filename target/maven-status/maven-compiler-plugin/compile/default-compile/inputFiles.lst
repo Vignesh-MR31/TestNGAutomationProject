@@ -1,8 +1,11 @@
 D:\Learning-Automation-New-Java\TestNGAutomationProject\src\test\java\web\automation\base\Base.java
+D:\Learning-Automation-New-Java\TestNGAutomationProject\src\test\java\web\automation\pages\WishListPage.java
 D:\Learning-Automation-New-Java\TestNGAutomationProject\src\test\java\web\automation\pages\LoginPage.java
 D:\Learning-Automation-New-Java\TestNGAutomationProject\src\test\java\web\automation\utils\CommonHelperMethods.java
+D:\Learning-Automation-New-Java\TestNGAutomationProject\src\test\java\web\automation\base\DriverManager.java
 D:\Learning-Automation-New-Java\TestNGAutomationProject\src\test\java\web\automation\pages\AddToCartPage.java
 D:\Learning-Automation-New-Java\TestNGAutomationProject\src\test\java\web\automation\tests\AddToCartTests.java
+D:\Learning-Automation-New-Java\TestNGAutomationProject\src\test\java\web\automation\tests\WishListTests.java
 D:\Learning-Automation-New-Java\TestNGAutomationProject\src\test\java\web\automation\utils\TestListeners.java
 D:\Learning-Automation-New-Java\TestNGAutomationProject\src\test\java\web\automation\tests\LoginPageTests.java
 D:\Learning-Automation-New-Java\TestNGAutomationProject\src\test\java\web\automation\utils\UtilityMethods.java
