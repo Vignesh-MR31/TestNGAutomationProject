@@ -14,13 +14,12 @@ public class LoginPageTests extends Base {
 	@Test(priority = 1, groups = "LoginPage")
 	public void loginUserWithValidCredentials() {
 		loginPage = new LoginPage(DriverManager.getDriver());
-		loginPage.myAccountElement().click();
-		loginPage.loginOptionElement().click();
-		loginPage.emailAddressElement().sendKeys("Vickymr@gmail.com");
-		loginPage.passwordElement().sendKeys("123456789");
-		loginPage.loginButtonElement().click();
-		String expectedHeader = "My Account";
-		Assert.assertEquals(expectedHeader, loginPage.myAccountHeaderElement().getText());
+		loginPage.clickmyAccount();
+		loginPage.clickLoginOption();
+		loginPage.enteringEmailAddress("Vickymr@gmail.com");
+		loginPage.enteringPassword("123456789");
+		loginPage.clickloginButton();
+		Assert.assertTrue(loginPage.myAccountHeaderElementIsDisplayed("My Account"));
 	}
 
 }

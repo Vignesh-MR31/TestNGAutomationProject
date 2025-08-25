@@ -29,28 +29,33 @@ public class LoginPage {
 	@FindBy(xpath = "(//div[@id='content']/h2)[1]")
 	private WebElement myAccountHeader;
 	
-	public WebElement myAccountElement() {
-		return myAccount;
+	public void clickmyAccount() {
+		myAccount.click();
 	}
 	
-	public WebElement loginOptionElement() {
-		return loginOption;
+	public void clickLoginOption() {
+		loginOption.click();
 	}
 	
-	public WebElement emailAddressElement() {
-		return emailAddress;
+	public void enteringEmailAddress(String emailText) {
+		emailAddress.sendKeys(emailText);
 	}
 	
-	public WebElement passwordElement() {
-		return password;
+	public void enteringPassword(String passwordText) {
+		password.sendKeys(passwordText);
 	}
 	
-	public WebElement loginButtonElement() {
-		return loginButton;
+	public void clickloginButton() {
+		loginButton.click();
 	}
 	
-	public WebElement myAccountHeaderElement() {
-		return myAccountHeader;
+	public boolean myAccountHeaderElementIsDisplayed(String header) {
+		if(myAccountHeader.getText().equalsIgnoreCase(header)) {
+			return true;
+		}
+		else {
+			return false;
+		}
 	}
 
 }

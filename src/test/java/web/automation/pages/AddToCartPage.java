@@ -7,6 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import web.automation.base.DriverManager;
+import web.automation.utils.CommonHelperMethods;
+
 public class AddToCartPage {
 	
 	public AddToCartPage(WebDriver driver) {
@@ -133,163 +136,123 @@ public class AddToCartPage {
 	@FindBy(xpath = "//input[@value='Add to Cart']")
 	private WebElement addToCartInProductCompare;
 	
-	public WebElement searchInputTextboxWebElement() {
-		return searchInputTextbox;
+	public void enteringProductInSearchInputTextbox(String product) {
+		try {
+			searchInputTextbox.sendKeys(product);
+		} catch (Exception e) {
+			searchInputTextbox.sendKeys(product);
+		}
 	}
 	
-	public WebElement searchIconButtonWebElement() {
-		return searchIconButton;
+	public void clearingSearchInputTextbox() {
+		searchInputTextbox.clear();
+	}
+	
+	public void searchIconButtonClick() {
+		searchIconButton.click();
 	}
 
-	public WebElement firstProductHeaderWebElement() {
-		return firstProductHeader;
+	public String gettingFirstProductHeader() {
+		return firstProductHeader.getText();
 	}
 	
-	public WebElement firstProductImageWebElement() {
-		return firstProductImage;
+	public void firstProductImageClick() {
+		firstProductImage.click();
 	}
 	
-	public WebElement noProductMessageWebElement() {
-		return noProductMessage;
+	public void clickProductCompareLink() {
+		productCompareLink.click();
 	}
 	
-	public List<WebElement> multipleProductsWebElements() {
-		return multipleProducts;
-	}
-	
-	public WebElement searchCriteriaWebElement() {
-		return searchCriteria;
-	}
-	
-	public WebElement searchButtonWebElement() {
-		return searchButton;
-	}
-	
-	public WebElement firstDescriptionWebElement() {
-		return firstDescription;
-	}
-	
-	public WebElement productDescriptionCheckboxWebElement() {
-		return productDescriptionCheckbox;
-	}
-	
-	public List<WebElement> searchedProductsDescriptionWebElement() {
-		return searchedProductsDescription;
-	}
-	
-	public WebElement categoryDropdownWebElement() {
-		return categoryDropdown;
-	}
-	
-	public WebElement subcategoryCheckboxWebElement() {
-		return subcategoryCheckbox;
-	}
-	
-	public WebElement listViewButtonWebElement() {
-		return listViewButton;
-	}
-	
-	public WebElement gridViewButtonWebElement() {
-		return gridViewButton;
-	}
-	
-	public WebElement productCompareLinkWebElement() {
-		return productCompareLink;
-	}
-	
-	public WebElement productComparisonHeaderWebElement() {
-		return productComparisonHeader;
-	}
-	
-	public WebElement sortOrderDropdownWebElement() {
-		return sortOrderDropdown;
-	}
-	
-	public List<WebElement> priceListWebElement() {
-		return priceList;
-	}
-	
-	public WebElement compareThisProductIconWebElement() {
-		return compareThisProductIcon;
-	}
-	
-	public WebElement addToCartPopupProductImageWebElement() {
-		return addToCartPopupProductImage;
+	public void clickAddToCartPopupButton() {
+		addToCartPopupButton.click();
 	}
 	
 	public WebElement addToCartPopupButtonWebElement() {
 		return addToCartPopupButton;
 	}
 	
-	public WebElement addToCartButtonWebElement() {
-		return addToCartButton;
+	public void clickAddToCartButton() {
+		addToCartButton.click();
 	}
 	
-	public WebElement addedProductNameInPopupWebElement() {
-		return addedProductNameInPopup;
+	public void clickAddToCartBtn() {
+		addToCartBtn.click();
 	}
 	
 	public WebElement addToCartBtnWebElement() {
 		return addToCartBtn;
 	}
 	
-	public WebElement addToCartSuccessMessageWebElement() {
-		return addToCartSuccessMessage;
+	public String getAddToCartSuccessMessage() {
+		return addToCartSuccessMessage.getText().replace('×', ' ').trim();
+	}
+	
+	public void clickAddToWishListButton() {
+		addToWishListButton.click();
 	}
 	
 	public WebElement addToWishListButtonWebElement() {
 		return addToWishListButton;
 	}
 	
-	public WebElement wishListHeaderWebElement() {
-		return wishListHeader;
+	public void clickWishListHeader() {
+		wishListHeader.click();
 	}
 	
-	public WebElement addToCartInWishListWebElement() {
-		return addToCartInWishList;
+	public void clickAddToCartInWishList() {
+		addToCartInWishList.click();
 	}
 	
-	public WebElement shoppingCartHeaderWebElement() {
-		return shoppingCartHeader;
+	public void clickShoppingCartHeader() {
+		shoppingCartHeader.click();
 	}
 	
-	public WebElement productNameInCartWebElement() {
-		return productNameInCart;
+	public String getProductNameInCart() {
+		return productNameInCart.getText();
 	}
 	
-	public WebElement viewCartLinkWebElement() {
-		return viewCartLink;
+	public void clickViewCartLink() {
+		viewCartLink.click();
 	}
 	
-	public WebElement relatedProductsAddToCartButtonWebElement() {
-		return relatedProductsAddToCartButton;
+	public void clickRelatedProductsAddToCartButton() {
+		relatedProductsAddToCartButton.click();
+	}
+	
+	public String getRelatedProductsFirstProductName() {
+		return relatedProductsFirstProductName.getText();
 	}
 	
 	public WebElement relatedProductsFirstProductNameWebElement() {
 		return relatedProductsFirstProductName;
 	}
 	
+	public void clickDesktopsDropdown() {
+		desktopsDropdown.click();
+	}
+	
 	public WebElement desktopsDropdownWebElement() {
 		return desktopsDropdown;
+	}
+	
+	public void clickShowAllDesktops() {
+		showAllDesktops.click();
 	}
 	
 	public WebElement showAllDesktopsWebElement() {
 		return showAllDesktops;
 	}
 	
-	public WebElement macOptionWebElement() {
-		return macOption;
+	public void clickMacOptionWebElement() {
+		macOption.click();
 	}
 	
-	public WebElement compareThisProductButtonWebElement() {
-		return compareThisProductButton;
+	public void clickCompareThisProductButton() {
+		compareThisProductButton.click();
 	}
 	
-	public WebElement productComparisonLinkWebElement() {
-		return productComparisonLink;
-	}
-	
-	public WebElement addToCartInProductCompareWebElement() {
-		return addToCartInProductCompare;
+	public void clickAddToCartInProductCompare() {
+		addToCartInProductCompare.click();
 	}
 }

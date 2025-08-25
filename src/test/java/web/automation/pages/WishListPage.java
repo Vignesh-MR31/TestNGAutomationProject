@@ -79,84 +79,116 @@ public class WishListPage {
 	@FindBy(xpath = "//a[@data-original-title='Remove']")
 	List<WebElement> removeButtonsInWishList;
 	
+	public void clickWishListButtonInRelatedProducts() {
+		wishListButtonInRelatedProducts.click();
+	}
+	
 	public WebElement wishListButtonInRelatedProductsWebElement() {
 		return wishListButtonInRelatedProducts;
 	}
 	
-	public WebElement firstRelatedProductHeaderWebElement() {
-		return firstRelatedProductHeader;
+	public String getFirstRelatedProductHeader() {
+		return firstRelatedProductHeader.getText();
+	}
+	
+	public void clickWishListLink() {
+		wishListLink.click();
 	}
 	
 	public WebElement wishListLinkWebElement() {
 		return wishListLink;
 	}
 	
-	public WebElement productNameInWishListPageWebElement() {
-		return productNameInWishListPage;
+	public String getProductNameInWishListPage() {
+		return productNameInWishListPage.getText();
 	}
 	
 	public WebElement logoWebElement() {
 		return logo;
 	}
 
+	public void clickWishListButtonInFeaturedProducts() {
+		wishListButtonInFeaturedProducts.click();
+	}
+	
 	public WebElement wishListButtonInFeaturedProductsWebElement() {
 		return wishListButtonInFeaturedProducts;
 	}
 	
-	public WebElement firstFeaturedProductHeaderWebElement() {
-		return firstFeaturedProductHeader;
+	public String getFirstFeaturedProductHeader() {
+		return firstFeaturedProductHeader.getText();
+	}
+	
+	public void clickRemoveButtonInWishList() {
+		removeButtonInWishList.click();
 	}
 	
 	public WebElement removeButtonInWishListWebElement() {
 		return removeButtonInWishList;
 	}
 	
+	public void clickWishListButtonInCategoryProducts() {
+		wishListButtonInCategoryProducts.click();
+	}
+	
 	public WebElement wishListButtonInCategoryProductsWebElement() {
 		return wishListButtonInCategoryProducts;
 	}
 	
-	public WebElement firstSearchedProductHeaderWebElement() {
-		return firstSearchedProductHeader;
+	public String getFirstSearchedProductHeader() {
+		return firstSearchedProductHeader.getText();
+	}
+	
+	public void clickWishListButtonInSearchedProducts() {
+		wishListButtonInSearchedProducts.click();
 	}
 	
 	public WebElement wishListButtonInSearchedProductsWebElement() {
 		return wishListButtonInSearchedProducts;
 	}
 	
-	public WebElement myAccountHeaderWebElement() {
-		return myAccountHeader;
+	public void clickMyAccountHeader() {
+		myAccountHeader.click();
+	}
+	
+	public void clickMyAccountOption() {
+		myAccountOption.click();
 	}
 	
 	public WebElement myAccountOptionWebElement() {
 		return myAccountOption;
 	}
 	
-	public WebElement wishListRightOptionWebElement() {
-		return wishListRightOption;
+	public void clickWishListRightOption() {
+		wishListRightOption.click();
 	}
 	
-	public WebElement modifyYourWishListWebElement() {
-		return modifyYourWishList;
+	public void clickModifyYourWishList() {
+		modifyYourWishList.click();
+	}
+	
+	public void clickWishListFooter() {
+		wishListFooter.click();
 	}
 	
 	public WebElement wishListFooterWebElement() {
 		return wishListFooter;
 	}
 	
-	public WebElement myAccountFooterWebElement() {
-		return myAccountFooter;
+	public void clickMyAccountFooter() {
+		myAccountFooter.click();
 	}
 	
-	public WebElement wishListEmptyMessageWebElement() {
-		return wishListEmptyMessage;
+	public String getWishListEmptyMessage() {
+		return wishListEmptyMessage.getText();
 	}
 	
-	public WebElement continueButtonInWishListWebElement() {
-		return continueButtonInWishList;
+	public void clickContinueButtonInWishList() {
+		continueButtonInWishList.click();
 	}
 	
-	public WebElement successMessageAfterRemoveWebElement() {
-		return successMessageAfterRemove;
+	public String getSuccessMessageAfterRemove() {
+		return successMessageAfterRemove.getText().replace('×', ' ').trim();
 	}
 	
 	public List<WebElement> productNamesInWishListPageWebElement() {
