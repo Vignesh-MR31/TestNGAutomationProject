@@ -97,7 +97,7 @@ public class AddToCartPage {
 	@FindBy(xpath = "(//button[@data-original-title='Add to Wish List'])[1]")
 	private WebElement addToWishListButton;
 	
-	@FindBy(id = "wishlist-total")
+	@FindBy(xpath = "//a[@id = 'wishlist-total']")
 	private WebElement wishListHeader;
 	
 	@FindBy(xpath = "//button[@data-original-title='Add to Cart']")
@@ -118,7 +118,7 @@ public class AddToCartPage {
 	@FindBy(xpath = "//div[@class='caption']//a")
 	private WebElement relatedProductsFirstProductName;
 	
-	@FindBy(xpath = "//a[text()='Desktops']")
+	@FindBy(linkText = "Desktops")
 	private WebElement desktopsDropdown;
 	
 	@FindBy(xpath = "//a[text()='Show AllDesktops']")

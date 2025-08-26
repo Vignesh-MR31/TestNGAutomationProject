@@ -21,8 +21,8 @@ public class Base {
 	public WebDriver driver;
 	
 	@BeforeMethod @Parameters("browser")
-	public void initiateDriver(){
-		String browser = PropertyLoader.propertyLoaderMethod().getProperty("browser").toLowerCase();
+	public void initiateDriver(String browser){
+		//String browser = PropertyLoader.propertyLoaderMethod().getProperty("browser").toLowerCase();
 		switch(browser){
 		case "chrome":
 			driver = new ChromeDriver();

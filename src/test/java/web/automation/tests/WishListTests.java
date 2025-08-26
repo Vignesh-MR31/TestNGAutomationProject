@@ -70,7 +70,7 @@ public class WishListTests extends Base{
 		firstFeaturedProduct = wishListPage.getFirstFeaturedProductHeader();
 		CommonHelperMethods.scrollIntoView(wishListPage.wishListButtonInFeaturedProductsWebElement(), DriverManager.getDriver());
 		CommonHelperMethods.moveToElement(wishListPage.wishListButtonInFeaturedProductsWebElement(), DriverManager.getDriver());
-		Thread.sleep(2000);;
+		Thread.sleep(2000);
 		wishListPage.clickWishListButtonInFeaturedProducts();
 		Thread.sleep(2000);
 		wishListPage.clickWishListLink();
@@ -88,8 +88,8 @@ public class WishListTests extends Base{
 		loginPage.enteringPassword("123456789");
 		loginPage.clickloginButton();
 		addToCartPage = new AddToCartPage(DriverManager.getDriver());
-		CommonHelperMethods.moveToElement(addToCartPage.desktopsDropdownWebElement(), DriverManager.getDriver());
-		addToCartPage.clickDesktopsDropdown();
+		CommonHelperMethods.handlingStaleElementException(addToCartPage.desktopsDropdownWebElement());
+		//addToCartPage.clickDesktopsDropdown();
 		CommonHelperMethods.moveToElement(addToCartPage.showAllDesktopsWebElement(), DriverManager.getDriver());
 		addToCartPage.clickShowAllDesktops();
 		addToCartPage.clickMacOptionWebElement();
