@@ -1,0 +1,14 @@
+web\automation\tests\LoginPageTests.class
+web\automation\pages\ShoppingCartPage.class
+web\automation\base\Base.class
+web\automation\utils\UtilityMethods.class
+web\automation\utils\PropertyLoader.class
+web\automation\tests\WishListTests.class
+web\automation\pages\LoginPage.class
+web\automation\pages\AddToCartPage.class
+web\automation\utils\CommonHelperMethods.class
+web\automation\utils\TestListeners.class
+web\automation\pages\WishListPage.class
+web\automation\tests\ShoppingCartTests.class
+web\automation\base\DriverManager.class
+web\automation\tests\AddToCartTests.class
