@@ -47,7 +47,6 @@ public class AddToCartTests extends Base{
 		Thread.sleep(2000);
 		//CommonHelperMethods.scrollIntoView(addToCartPage.addToWishListButtonWebElement(), DriverManager.getDriver());
 		CommonHelperMethods.moveToElement(addToCartPage.addToWishListButtonWebElement(), DriverManager.getDriver());
-		Thread.sleep(2000);
 		addToCartPage.clickAddToWishListButton();
 		addToCartPage.clickWishListHeader();
 		addToCartPage.clickAddToCartInWishList();
